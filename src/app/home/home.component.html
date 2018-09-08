@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from bootstrapmade.com/demo/themes/Regna/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Sep 2018 10:58:28 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
   <meta charset="utf-8">
-  <title>Regna Bootstrap Template</title>
+  <title>Code of Duty</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -21,20 +20,20 @@
   <header id="header">
     <div class="container">
 
-      <div id="logo" class="pull-left">
-        <a href="#hero"><img src="assets/img/logo.png" alt="" title="" /> </a>
+      <div id="logo" class="pull-left noselect">
+        <a href="#hero"><img   id="codeLogo" src="assets/img/logo.svg" alt="" title="" /> </a>
         <!-- Uncomment below if you prefer to use a text logo -->
         <!--<h1><a href="#hero">Regna</a></h1>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a pageScroll href="#about">About Us</a></li>
-          <li><a pageScroll href="#services">Services</a></li>
-          <li><a pageScroll href="#portfolio">Portfolio</a></li>
-          <li><a pageScroll href="#team">Team</a></li>
-          <li class="menu-has-children"><a  style="color:white"  >Drop Down <i class="fas fa-chevron-down"></i></a>
+          <li class="menu-active noselect"><a href="#hero">Home</a></li>
+          <li class="noselect"><a pageScroll href="#about">About Us</a></li>
+          <li class="noselect"><a pageScroll href="#services">Rules</a></li>
+          <li class="noselect"><a pageScroll href="#portfolio">Categories</a></li>
+          <li class="noselect"><a pageScroll href="#team">Team</a></li>
+          <li class="menu-has-children noselect"><a style="color:white">Years <i class="fas fa-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -51,7 +50,8 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="noselect"><a href="#contact">Contact</a></li>
+          <li class="noselect"><a href="#FAQ">F.A.Q.</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -62,14 +62,24 @@
   ============================-->
   <section id="hero">
     <div class="hero-container">
-      <h1>Welcome to Regna</h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started">Get Started</a>
+      <h1 class="headerText noselect">Welcome to Code of Duty</h1>
+      <h2 class="welcomingText noselect">We are getting ready for a better future 😄</h2>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScfK6Jb-N7BWdw7mpM5sLI86heehoWvB75csLb6wceZkDnLWg/viewform?usp=send_form" target="_blank"class="btn-get-started noselect">LET'S JOIN US!</a>
     </div>
+
+    <!--==========================
+    Game Section
+  ============================-->
+    <div id="world"></div>
+    <!--==========================
+    Game Section
+  ============================-->
+
   </section><!-- #hero -->
 
   <main id="main">
-
+ 
+ 
     <!--==========================
       About Us Section
     ============================-->
@@ -80,25 +90,30 @@
           <div class="col-lg-6 content order-lg-1 order-2">
             <h2 class="title">Few Words About Us</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
             </p>
 
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
               <h4 class="title"><a href="#">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                soluta nobis est eligendi</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-photo"></i></div>
               <h4 class="title"><a href="#">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
               <h4 class="title"><a href="#">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat tarad limino ata</p>
             </div>
 
           </div>
@@ -116,31 +131,32 @@
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Facts</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
         </div>
         <div class="row counters">
 
-  				<div class="col-lg-3 col-6 text-center">
+          <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">55</h1>
-          <p>Clients</p>
-  				</div>
+            <p>Clients</p>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">123</h1>
             <p>Projects</p>
-  				</div>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">234</h1>
             <p>Hours Of Support</p>
-  				</div>
+          </div>
 
           <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">9</h1>
             <p>Hard Workers</p>
-  				</div>
+          </div>
 
-  			</div>
+        </div>
 
       </div>
     </section><!-- #facts -->
@@ -152,28 +168,32 @@
       <div class="container wow fadeIn">
         <div class="section-header">
           <h3 class="section-title">Services</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-desktop"></i></a></div>
               <h4 class="title"><a href="#">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                occaecati cupiditate non provident</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-bar-chart"></i></a></div>
               <h4 class="title"><a href="#">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat tarad limino ata</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-paper-plane"></i></a></div>
               <h4 class="title"><a href="#">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur</p>
             </div>
           </div>
 
@@ -181,21 +201,24 @@
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-photo"></i></a></div>
               <h4 class="title"><a href="#">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-road"></i></a></div>
               <h4 class="title"><a href="#">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque</p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="box">
               <div class="icon"><a href="#"><i class="fa fa-shopping-bag"></i></a></div>
               <h4 class="title"><a href="#">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                soluta nobis est eligendi</p>
             </div>
           </div>
         </div>
@@ -211,7 +234,9 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
             <a class="cta-btn align-middle" href="#">Call To Action</a>
@@ -228,7 +253,8 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Portfolio</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
         </div>
         <div class="row">
 
@@ -376,7 +402,8 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Team</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -446,7 +473,8 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque</p>
         </div>
       </div>
 
@@ -489,19 +517,23 @@
               <div id="errormessage"></div>
               <form action="#" method="post" role="form" class="contactForm">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                    data-msg="Please enter a valid email" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                    placeholder="Message"></textarea>
                   <div class="validation"></div>
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
@@ -522,7 +554,9 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
+        <div class="row">
 
+        </div>
       </div>
     </div>
 
@@ -536,4 +570,5 @@
 </body>
 
 <!-- Mirrored from bootstrapmade.com/demo/themes/Regna/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Sep 2018 10:58:46 GMT -->
+
 </html>

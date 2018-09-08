@@ -11,6 +11,7 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -113,18 +114,24 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
+  margin: -2vh 0 0 0 ;
 }
 
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 26px;
   }
-  #header #logo img {
-    max-height: 40px;
-  }
+ 
+}
+#codeLogo {
+  width: 10vw!important  
 }
 
+@media  (max-width:1000px)  {
+  #codeLogo {
+    width: 6vw!important  
+  }
+}
 #header.header-fixed {
   background: rgba(52, 59, 64, 0.9);
   padding: 20px 0;
@@ -147,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+
 }
 
 #hero:before {
@@ -170,6 +178,17 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 #hero h1 {
@@ -215,6 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   border: 2px solid #fff;
   color: #fff;
+  opacity: 0;
 }
 
 #hero .btn-get-started:hover {
