@@ -167,6 +167,8 @@ a:hover,a:focus{
       transition:800ms ease all;
       outline:none;
       margin-top: 4vh;
+      border-radius: 2px!important;
+
     }
     .brainBtn:hover{
       background:#fff;
@@ -209,6 +211,7 @@ a:hover,a:focus{
       transition:800ms ease all;
       outline:none;
       margin-top: 4vh;
+      border-radius: 2px!important;
 
     }
     .buildBtn:hover{
@@ -239,7 +242,7 @@ a:hover,a:focus{
     
     /*BRAIN BTN*/
 
-     /*BRAIN BTN*/
+     /*HACK BTN*/
      .hackBtn{
       background:rgb(186, 159, 87);
       color:#fff;
@@ -252,6 +255,7 @@ a:hover,a:focus{
       transition:800ms ease all;
       outline:none;
       margin-top: 4vh;
+      border-radius: 2px!important;
 
     }
     .hackBtn:hover{
@@ -280,4 +284,4 @@ a:hover,a:focus{
     }
     
     
-    /*BRAIN BTN*/
+    /*HACK BTN*/
