@@ -22,8 +22,7 @@ export const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     CountUpModule,
-    NgxPageScrollModule
-  ],
+   ],
   providers: [],
   bootstrap: [AppComponent]
 })

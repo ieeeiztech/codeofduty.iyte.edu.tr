@@ -7,12 +7,12 @@ z-index: 99999;
 .social {
 float: right;   
 list-style: none;
-border-radius: 3px;
+border-radius: 6px;
  background: #aba9bd50;
- border-radius: 3px;
+ border-radius: 1px;
 border-style: solid;
 border-width: 0px;
- padding: 10px 5px;
+ padding: 7px 7px;
 position: relative;
 text-align: center;
  
@@ -23,22 +23,22 @@ text-align: center;
   }
   
   .social li {
-    margin-top: 10px
+    margin-top: 7px
   }
   
   .social li a {
     display: block;
     background: #999999;
     color: #efefef;
-    border-radius: 15px;
+    border-radius: 2px;
     text-decoration: none;
-    line-height: 30px;
-    width: 30px;
+    line-height: 20px;
+    width: 20px;
     font-size: 14px;
   }
   
   .social a.tw:hover {
-    background: #00acee
+    background: #00acee;
   }
   
   .social a.fb:hover {
@@ -48,3 +48,42 @@ text-align: center;
   .social a.ins:hover {
     background: #dd4b39
   }
+
+  .owlContainer {
+      width: 100%;
+     overflow: hidden;
+   }
+   .aaa {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+    }
+  h3,p{
+    margin: 0 !important;
+    font-size: 10px;
+    color:rgb(105, 105, 105);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    
+}
+a:hover,a:focus{
+    text-decoration: none !important;
+    outline: none !important;
+}
+.testimonial{
+    text-align: center;
+    color: #F2EFE8;
+    background-color: rgba(86, 86, 91, 0.252);
+    margin:20px 15px;
+    padding: 10px 20px;
+    border-radius:4px;
+    position: relative;
+    z-index: 1;
+    height: 20vh;
+    width: 70%;
+    box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.456);
+
+}
+ 
