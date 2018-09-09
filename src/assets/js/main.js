@@ -729,10 +729,11 @@ jQuery(document).ready(function ($) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
       $('#codeLogo').css({ 'margin-top': '-3vh' })
-    } else {
+    } 
+     else {
       $('.back-to-top').fadeOut('slow');
       $('#header').removeClass('header-fixed');
-      $('#codeLogo').css({ 'margin-top': '0vh' })
+      $('#codeLogo').css({ 'margin-top': '0vh' });
 
     }
   });

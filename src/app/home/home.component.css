@@ -1,0 +1,50 @@
+.socialContainer {
+    width: 100%;
+top: 20vh;
+position: fixed;
+z-index: 99999;
+}
+.social {
+float: right;   
+list-style: none;
+border-radius: 3px;
+ background: #aba9bd50;
+ border-radius: 3px;
+border-style: solid;
+border-width: 0px;
+ padding: 10px 5px;
+position: relative;
+text-align: center;
+ 
+}
+
+.social li:first-child {
+    margin-top: 0
+  }
+  
+  .social li {
+    margin-top: 10px
+  }
+  
+  .social li a {
+    display: block;
+    background: #999999;
+    color: #efefef;
+    border-radius: 15px;
+    text-decoration: none;
+    line-height: 30px;
+    width: 30px;
+    font-size: 14px;
+  }
+  
+  .social a.tw:hover {
+    background: #00acee
+  }
+  
+  .social a.fb:hover {
+    background: #3b5998
+  }
+  
+  .social a.ins:hover {
+    background: #dd4b39
+  }

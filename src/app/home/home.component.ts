@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+    
+
     TweenMax.from('.headerText',1,{y:-100,opacity:1});
     TweenMax.from('.welcomingText',1,{y:100,opacity:0,delay:1.2});
     TweenMax.to('.btn-get-started',1,{opacity:1,delay:1.4});
@@ -19,7 +22,8 @@ export class HomeComponent implements OnInit {
      
      $(window).scroll(() => {
       const scroolPosition = $(window).scrollTop();
-
+      console.log(scroolPosition);
+      
       if (scroolPosition >= 1000 && this.check) {
         console.log('GİRDİ');
 
@@ -39,6 +43,9 @@ export class HomeComponent implements OnInit {
       }
 
     });
+
+
+    
   }
 
 }
