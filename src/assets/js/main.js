@@ -725,7 +725,7 @@ jQuery(document).ready(function ($) {
   console.log('WORKED BRO')
   // Header fixed and Back to top button
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 300) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
       $('#codeLogo').css({ 'margin-top': '-3vh' })

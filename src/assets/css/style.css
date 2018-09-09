@@ -127,9 +127,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 10vw!important  
 }
 
- 
+@media (min-width: 1024px) {
+  #codeLogo {
+    width: 7vw!important  
+  }
+
+}
+
 #header.header-fixed {
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(91, 96, 100, 0.741);
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -155,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -503,7 +509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background:#F7F7F7;
   padding: 80px 0;
 }
 

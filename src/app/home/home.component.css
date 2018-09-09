@@ -52,6 +52,8 @@ text-align: center;
   .owlContainer {
       width: 100%;
      overflow: hidden;
+     padding-left: 8vw;
+     background-color: #F7F7F7;
    }
    .aaa {
     position: absolute;
@@ -87,3 +89,195 @@ a:hover,a:focus{
 
 }
  
+
+
+.aboutUsHeader {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(29, 29, 29)
+}
+
+.aboutText {
+  font-size: 16px;
+}
+
+ 
+.card {
+  margin: 0 auto;
+}
+
+ .card {
+  border-radius: 2px;
+   overflow: hidden;
+  
+  }.card-img-top {
+    background: url('../../assets/img/logo_brainhack.png') ;
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 25%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 400px;
+  }
+
+  .card-img-top2 {
+    background: url('../../assets/img/logo_buildup.png') center / cover;
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 25%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 400px;
+  }
+
+  .card-img-top3 {
+    background: url('../../assets/img/logo_izhack.jpg') center / cover;
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 25%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 400px;
+  }
+  .categoriesHeader {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(29, 29, 29);
+   }
+ 
+  .categories {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+    background-color:#F7F7F7;
+    }
+
+
+
+
+    /*BRAIN BTN*/
+    .brainBtn{
+      background:rgb(26, 171, 108);
+      color:#fff;
+      border:none;
+      position:relative;
+      height:60px;
+      font-size:1.6em;
+      padding:0 2em;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+      margin-top: 4vh;
+    }
+    .brainBtn:hover{
+      background:#fff;
+      color:rgb(26, 171, 108);
+    }
+    .brainBtn:before,.brainBtn:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: rgb(26, 171, 108);
+      transition:400ms ease all;
+    }
+    .brainBtn:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    .brainBtn:hover:before,.brainBtn:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+    
+    
+    /*BRAIN BTN*/
+
+     /*BUILD BTN*/
+     .buildBtn{
+      background:#3491BF;
+      color:#fff;
+      border:none;
+      position:relative;
+      height:60px;
+      font-size:1.6em;
+      padding:0 2em;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+      margin-top: 4vh;
+
+    }
+    .buildBtn:hover{
+      background:#fff;
+      color:rgb(26, 171, 108);
+    }
+    .buildBtn:before,.buildBtn:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background: rgb(26, 171, 108);
+      transition:400ms ease all;
+    }
+    .buildBtn:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    .buildBtn:hover:before,.buildBtn:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+    
+    
+    /*BRAIN BTN*/
+
+     /*BRAIN BTN*/
+     .hackBtn{
+      background:rgb(186, 159, 87);
+      color:#fff;
+      border:none;
+      position:relative;
+      height:60px;
+      font-size:1.6em;
+      padding:0 2em;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+      margin-top: 4vh;
+
+    }
+    .hackBtn:hover{
+      background:#fff;
+      color:rgb(186, 159, 87);
+    }
+    .hackBtn:before,.hackBtn:after{
+      content:'';
+      position:absolute;
+      top:0;
+      right:0;
+      height:2px;
+      width:0;
+      background:rgb(186, 159, 87);
+      transition:400ms ease all;
+    }
+    .hackBtn:after{
+      right:inherit;
+      top:inherit;
+      left:0;
+      bottom:0;
+    }
+    .hackBtn:hover:before,.hackBtn:hover:after{
+      width:100%;
+      transition:800ms ease all;
+    }
+    
+    
+    /*BRAIN BTN*/
