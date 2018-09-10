@@ -1,32 +1,34 @@
 .socialContainer {
-    width: 100%;
-top: 20vh;
-position: fixed;
-z-index: 99999;
+    width: 10%;
+    top: 20vh;
+    right:0;
+    position: fixed;
+    z-index: 99999;
 }
+
 .social {
-float: right;   
-list-style: none;
-border-radius: 6px;
- background: #aba9bd50;
- border-radius: 1px;
-border-style: solid;
-border-width: 0px;
- padding: 7px 7px;
-position: relative;
-text-align: center;
- 
+    float: right;
+    list-style: none;
+    border-radius: 6px;
+    background: #4a494f50;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 0px;
+    padding: 12px 12px;
+    position: relative;
+    text-align: center;
+    margin-right: -2px
 }
 
 .social li:first-child {
     margin-top: 0
-  }
-  
-  .social li {
-    margin-top: 7px
-  }
-  
-  .social li a {
+}
+
+.social li {
+    margin-top: 18px
+}
+
+.social li a {
     display: block;
     background: #999999;
     color: #efefef;
@@ -34,254 +36,295 @@ text-align: center;
     text-decoration: none;
     line-height: 20px;
     width: 20px;
-    font-size: 14px;
-  }
-  
-  .social a.tw:hover {
-    background: #00acee;
-  }
-  
-  .social a.fb:hover {
-    background: #3b5998
-  }
-  
-  .social a.ins:hover {
-    background: #dd4b39
-  }
+    font-size: 18px;
+}
 
-  .owlContainer {
-      width: 100%;
-     overflow: hidden;
-     padding-left: 8vw;
-     background-color: #F7F7F7;
-   }
-   .aaa {
+.social a.tw:hover {
+    background: #00acee;
+}
+
+.social a.fb:hover {
+    background: #3b5998
+}
+
+.social a.ins:hover {
+    background: #dd4b39
+}
+
+.owlContainer {
+    width: 100%;
+    padding-left: 4vw;
+    padding-top:4vh;
+    overflow: hidden;
+    background-color: #F7F7F7;
+}
+
+.aaa {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
-    }
-  h3,p{
-    margin: 0 !important;
-    font-size: 10px;
-    color:rgb(105, 105, 105);
-    font-family: "Open Sans", sans-serif;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial {
+    font-size:1vw;
+    color: rgb(71, 71, 71);
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    
-}
-a:hover,a:focus{
-    text-decoration: none !important;
-    outline: none !important;
-}
-.testimonial{
     text-align: center;
-    color: #F2EFE8;
     background-color: rgba(86, 86, 91, 0.252);
-    margin:20px 15px;
+    margin: 20px 15px;
     padding: 10px 20px;
-    border-radius:4px;
+    border-radius: 4px;
     position: relative;
     z-index: 1;
     height: 20vh;
     width: 70%;
     box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.456);
-
+    overflow: hidden;
 }
- 
-
 
 .aboutUsHeader {
-  font-size: 30px;
-  font-weight: 900;
-  color: rgb(29, 29, 29)
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(29, 29, 29)
 }
 
 .aboutText {
-  font-size: 16px;
+    font-size: 16px;
 }
 
- 
 .card {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
- .card {
-  border-radius: 2px;
-   overflow: hidden;
-  
-  }.card-img-top {
-    background: url('../../assets/img/logo_brainhack.png') ;
+.card {
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 2px 5px 20px 0px rgba(81, 81, 81, 0.701);
+
+}
+
+.card-img-top {
+    background: url('../../assets/img/logo_brainhack.png');
     background-position: center;
     background-size: 55%;
-    background-position-x: 25%;
+    background-position-x: 50%;
     background-repeat: no-repeat;
     height: 200px;
     width: 400px;
-  }
+}
 
-  .card-img-top2 {
+.card-img-top2 {
     background: url('../../assets/img/logo_buildup.png') center / cover;
     background-position: center;
     background-size: 55%;
-    background-position-x: 25%;
+    background-position-x: 50%;
     background-repeat: no-repeat;
     height: 200px;
     width: 400px;
-  }
+}
 
-  .card-img-top3 {
+.card-img-top3 {
     background: url('../../assets/img/logo_izhack.jpg') center / cover;
     background-position: center;
     background-size: 55%;
-    background-position-x: 25%;
+    background-position-x: 50%;
     background-repeat: no-repeat;
     height: 200px;
     width: 400px;
-  }
-  .categoriesHeader {
+}
+
+.categoriesHeader {
     font-size: 30px;
     font-weight: 900;
     color: rgb(29, 29, 29);
-   }
- 
-  .categories {
+}
+
+#categories {
     padding-top: 4vh;
     padding-bottom: 2vh;
-    background-color:#F7F7F7;
-    }
+    background-color: #F7F7F7;
+}
+
+/*BRAIN BTN*/
+
+.brainBtn {
+    background: rgb(26, 171, 108);
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    margin-top: 4vh;
+    border-radius: 2px !important;
+    box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.701);
+
+}
+
+.brainBtn:hover {
+    background: #fff;
+    color: rgb(26, 171, 108);
+}
+
+.brainBtn:before,
+.brainBtn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(26, 171, 108);
+    transition: 400ms ease all;
+}
+
+.brainBtn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.brainBtn:hover:before,
+.brainBtn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/*BRAIN BTN*/
+
+/*BUILD BTN*/
+
+.buildBtn {
+    background: #3491BF;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    margin-top: 4vh;
+    border-radius: 2px !important;
+    box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.701);
+}
+
+.buildBtn:hover {
+    background: #fff;
+    color: #3491BF;
+}
+
+.buildBtn:before,
+.buildBtn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #3491BF;
+    transition: 400ms ease all;
+}
+
+.buildBtn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.buildBtn:hover:before,
+.buildBtn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/*BRAIN BTN*/
+
+/*HACK BTN*/
+
+.hackBtn {
+    background: rgb(186, 159, 87);
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    margin-top: 4vh;
+    border-radius: 2px !important;
+    box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.701);
+
+}
+
+.hackBtn:hover {
+    background: #fff;
+    color: rgb(186, 159, 87);
+}
+
+.hackBtn:before,
+.hackBtn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(186, 159, 87);
+    transition: 400ms ease all;
+}
+
+.hackBtn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.hackBtn:hover:before,
+.hackBtn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/*HACK BTN*/
 
 
 
+#portfolio img {
+  width: 40vw;
+  padding-right: 10vw;
+  margin-bottom: 5vw;
+}
+ 
+ #ekin {
+   margin-top: -30%;
+  }
 
-    /*BRAIN BTN*/
-    .brainBtn{
-      background:rgb(26, 171, 108);
-      color:#fff;
-      border:none;
-      position:relative;
-      height:60px;
-      font-size:1.6em;
-      padding:0 2em;
-      cursor:pointer;
-      transition:800ms ease all;
-      outline:none;
-      margin-top: 4vh;
-      border-radius: 2px!important;
+  #ayca {
+    margin-top: -30%;
+  }
+  #alpcan {
+    margin-top: -30%;
 
-    }
-    .brainBtn:hover{
-      background:#fff;
-      color:rgb(26, 171, 108);
-    }
-    .brainBtn:before,.brainBtn:after{
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      height:2px;
-      width:0;
-      background: rgb(26, 171, 108);
-      transition:400ms ease all;
-    }
-    .brainBtn:after{
-      right:inherit;
-      top:inherit;
-      left:0;
-      bottom:0;
-    }
-    .brainBtn:hover:before,.brainBtn:hover:after{
-      width:100%;
-      transition:800ms ease all;
-    }
-    
-    
-    /*BRAIN BTN*/
+  }
 
-     /*BUILD BTN*/
-     .buildBtn{
-      background:#3491BF;
-      color:#fff;
-      border:none;
-      position:relative;
-      height:60px;
-      font-size:1.6em;
-      padding:0 2em;
-      cursor:pointer;
-      transition:800ms ease all;
-      outline:none;
-      margin-top: 4vh;
-      border-radius: 2px!important;
+  #burak {
+    margin-top: -30%;
 
-    }
-    .buildBtn:hover{
-      background:#fff;
-      color:rgb(26, 171, 108);
-    }
-    .buildBtn:before,.buildBtn:after{
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      height:2px;
-      width:0;
-      background: rgb(26, 171, 108);
-      transition:400ms ease all;
-    }
-    .buildBtn:after{
-      right:inherit;
-      top:inherit;
-      left:0;
-      bottom:0;
-    }
-    .buildBtn:hover:before,.buildBtn:hover:after{
-      width:100%;
-      transition:800ms ease all;
-    }
-    
-    
-    /*BRAIN BTN*/
+  }
+  #murat {
+    width: 140%;
+  }
 
-     /*HACK BTN*/
-     .hackBtn{
-      background:rgb(186, 159, 87);
-      color:#fff;
-      border:none;
-      position:relative;
-      height:60px;
-      font-size:1.6em;
-      padding:0 2em;
-      cursor:pointer;
-      transition:800ms ease all;
-      outline:none;
-      margin-top: 4vh;
-      border-radius: 2px!important;
-
-    }
-    .hackBtn:hover{
-      background:#fff;
-      color:rgb(186, 159, 87);
-    }
-    .hackBtn:before,.hackBtn:after{
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      height:2px;
-      width:0;
-      background:rgb(186, 159, 87);
-      transition:400ms ease all;
-    }
-    .hackBtn:after{
-      right:inherit;
-      top:inherit;
-      left:0;
-      bottom:0;
-    }
-    .hackBtn:hover:before,.hackBtn:hover:after{
-      width:100%;
-      transition:800ms ease all;
-    }
-    
-    
-    /*HACK BTN*/
+ 

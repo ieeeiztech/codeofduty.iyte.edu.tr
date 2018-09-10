@@ -2,17 +2,9 @@
 <html lang="en">
 
 
-<head>
-  <meta charset="utf-8">
-  <title>Code of Duty</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
 
-
-</head>
-
-<body>
+<body ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();"
+  ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">
 
 
   <!--==========================
@@ -29,15 +21,15 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active noselect"><a href="#hero">Home</a></li>
-          <li class="noselect"><a pageScroll href="#about">About Us</a></li>
-          <li class="noselect"><a pageScroll href="#categories">Categories</a></li>
-          <li class="noselect"><a pageScroll href="#sponsors">Sponsors</a></li>
-          <li class="noselect"><a pageScroll href="#team">Team</a></li>
-          <li class="noselect"><a pageScroll href="#faq">FAQ</a></li>
+          <li class="menu-active noselect"><a style="color:aliceblue;" (click)="scroll('#hero')">Home</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#about')">About Us</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#categories')">Categories</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#sponsors')">Sponsors</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#team')">Team</a></li>
+          <li class="noselect"><a style="color:aliceblue;">FAQ</a></li>
 
-          <li class="noselect"><a href="#contact">Contact</a></li>
-          <li class="noselect"><a style="color:rgb(176, 66, 58)">TR</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#contact')">Contact</a></li>
+          <li class="noselect"><a style="color:rgb(198, 64, 54)"><b>TR</b></a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -52,13 +44,13 @@
         </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/CodeofDutyIzhack/" class="fb">
+        <a href="https://www.facebook.com/IztechCodeofDuty" class="fb">
           <i class="fab fa-facebook-square"></i>
 
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/iztechcodeofduty" class="ins">
+        <a href="https://www.instagram.com/iztechcodeofduty/" class="ins">
           <i class="fab fa-instagram"></i>
 
         </a>
@@ -112,8 +104,8 @@
 
         <div class="testimonial">
           <div class="aaa">
-            <p>CoD IzHack'te dereceye giren olan ve Hacktrick
-              etkinliğinde düzenlenecek olan Game of Pwners yarışmasına doğrudan katılma hakkı kazanacaktır.</p>
+            <p>Dereceye giren olan ve Hacktrick
+              etkinliğinde kazanacaktır.</p>
           </div>
         </div>
 
@@ -166,7 +158,7 @@
     </section>
 
     <!-- #categories -->
-    <section class="categories">
+    <section id="categories">
 
       <div>
 
@@ -178,13 +170,13 @@
 
         <div class="row text-center">
           <div class="col-lg-4">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 25rem;">
               <div class="card-img-top"></div>
               <div class="card-body">
-                <h4 class="card-title">Brain Hack</h4>
+                <h4 class="card-title">BrainHack</h4>
                 <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
                   doesn't distort your content.</p>
-                <button type="button" class="brainBtn" data-toggle="modal" data-target="#brain">Hover me !</button>
+                <button type="button" class="brainBtn" data-toggle="modal" data-target="#brain">Details</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="brain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -214,15 +206,15 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 25rem;">
               <div class="card-img-top2"></div>
               <div class="card-body">
                 <h4 class="card-title">BuildUp</h4>
                 <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
                   doesn't distort your content.</p>
-                <button class="buildBtn" data-toggle="modal" data-target="#build">Hover me !</button>
+                <button class="buildBtn" data-toggle="modal" data-target="#build">Details</button>
 
-                
+
                 <!-- Modal -->
                 <div class="modal fade" id="build" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -251,13 +243,13 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 25rem;">
               <div class="card-img-top3"></div>
               <div class="card-body">
                 <h4 class="card-title">IzHACK</h4>
                 <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
                   doesn't distort your content.</p>
-                <button class="hackBtn" data-toggle="modal" data-target="#hack">Hover me !</button>
+                <button class="hackBtn" data-toggle="modal" data-target="#hack">Details</button>
                 <!-- Modal -->
                 <div class="modal fade" id="hack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -320,15 +312,15 @@
 
           <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">10.200</h1>
-            <p> Price of distributed  ₺</p>
+            <p> Price of distributed ₺</p>
           </div>
 
         </div>
 
       </div>
     </section><!-- #facts -->
- 
-  
+
+
 
     <!--==========================
       Portfolio Section
@@ -344,135 +336,318 @@
 
           <div class="col-lg-12">
             <ul id="portfolio-flters">
-              <li data-filter=".filter-app, .filter-card, .filter-logo, .filter-web" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-logo">Logo</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-cod" class="filter-active">COD</li>
+              <li data-filter=".filter-buildup">Buildup</li>
+              <li data-filter=".filter-brainhack">brainhack</li>
+              <li data-filter=".filter-izhack">izhack</li>
+              <li data-filter=".filter-cod, .filter-buildup, .filter-brainhack, .filter-izhack">All</li>
+
             </ul>
           </div>
         </div>
 
         <div class="row" id="portfolio-wrapper">
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/app1.jpg" alt="">
-              <div class="details">
-                <h4>App 1</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/1.jpg">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/web2.jpg" alt="">
-              <div class="details">
-                <h4>Web 2</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/2.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/app3.jpg" alt="">
-              <div class="details">
-                <h4>App 3</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/3.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/card1.jpg" alt="">
-              <div class="details">
-                <h4>Card 1</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/4.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/card2.jpg" alt="">
-              <div class="details">
-                <h4>Card 2</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/5.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/web3.jpg" alt="">
-              <div class="details">
-                <h4>Web 3</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/6.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/card3.jpg" alt="">
-              <div class="details">
-                <h4>Card 3</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/7.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/app2.jpg" alt="">
-              <div class="details">
-                <h4>App 2</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/8.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/logo1.jpg" alt="">
-              <div class="details">
-                <h4>Logo 1</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/9.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/logo3.jpg" alt="">
-              <div class="details">
-                <h4>Logo 3</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/10.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/web1.jpg" alt="">
-              <div class="details">
-                <h4>Web 1</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/11.jpg" alt="">
             </a>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-logo">
+          <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
             <a href="#">
-              <img src="assets/img/portfolio/logo2.jpg" alt="">
-              <div class="details">
-                <h4>Logo 2</h4>
-                <span>Alored dono par</span>
-              </div>
+              <img src="assets/img/COD_IMAGES/CoD_new/12.jpg" alt="">
             </a>
           </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/1.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/2.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/3.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/4.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/5.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/6.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/7.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/8.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/9.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/10.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/11.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/build_new/12.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/1.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/2.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/3.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/4.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/5.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/6.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/7.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/8.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/9.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/10.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/11.jpg" alt="">
+            </a>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/brainhack_new/12.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/1.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/2.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/3.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/4.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/5.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/6.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/7.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/8.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/9.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/10.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/11.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
+            <a href="#">
+              <img src="assets/img/COD_IMAGES/izhack_new/12.jpg" alt="">
+            </a>
+          </div>
+
+
+
+
 
         </div>
 
@@ -492,63 +667,101 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
+              <div class="pic"><img id="ekin" src="assets/img/team/ekin.jpg" alt=""></div>
+              <h4>Ekin SEDİR</h4>
+              <span>General Coordinator</span>
+              <a href="https://twitter.com/ekinsedir"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/ekinsedir/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <div class="social">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
+              <div class="pic"><img id="ayca" src="assets/img/team/ayca.jpg" alt=""></div>
+              <h4>Ayça AKSU</h4>
+              <span> Mentor</span>
+              <a href="https://twitter.com/IEEEIYTE"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/company/ieee-iztech-student-branch/"><i class="fab fa-linkedin fa-2x"></i></a>
+
+
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/team-3.jpg" alt=""></div>
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <div class="social">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
+              <div class="pic"><img id="alpcan" src="assets/img/team/alpcan.jpg" alt=""></div>
+              <h4>Alpcan YILDIZ</h4>
+              <span>BrainHack Mentor</span>
+              <a href="https://twitter.com/UlpJuan"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/alpcan-yildiz-24829b15b/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="assets/img/team-4.jpg" alt=""></div>
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <div class="social">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </div>
+              <div class="pic"><img id="burak" src="assets/img/team/burak.jpg" alt=""></div>
+              <h4>Burak KURHAN</h4>
+              <span>BrainHack Mentor</span>
+              <a href="https://twitter.com/burakkurhan"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/ismail-burak-kurhan/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img id="murat" src="assets/img/team/murat.jpg" alt=""></div>
+              <h4>Murat ARSLAN</h4>
+              <span>IzHack Mentor</span>
+              <a href="https://twitter.com/Merg3nHan"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/murat-arslan-847943120/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/umut.jpg" alt=""></div>
+              <h4>Umut ACERBAŞTİMUR</h4>
+              <span>Webmaster</span>
+              <a href="https://twitter.com/UAcerbastimur"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/umutacerbastimur/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/mazlum.jpg" alt=""></div>
+              <h4>Mazlum TANRIKULU</h4>
+              <span>Design</span>
+              <a href="https://twitter.com/mazlumtanrkulu2"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/in/mazlum-tanr%C4%B1kulu-7609b7a7/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
           </div>
         </div>
 
       </div>
     </section><!-- #team -->
+
+    <!-- SPONSORS -->
+    <section id="sponsors">
+      <div class="owl-carousel owl-theme sponsorOwl">
+        <div class="item"><img src="assets/img/sponsors/bilimsenligi.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.jpg" /></div>
+        <div class="item"><img src="assets/img/sponsors/ieee.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/linovi.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/Logo-2-1.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/logwerqo.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/octosec.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/plusclouds-logo.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/sdn-logo.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/sitoplazma.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.jpg" /></div>
+        <div class="item"><img src="assets/img/sponsors/twgg.png" /></div>
+        <div class="item"><img src="assets/img/sponsors/webtekno-logo.png" /></div>
+
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
 
     <!--==========================
       Contact Section

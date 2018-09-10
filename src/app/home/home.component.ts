@@ -11,8 +11,10 @@ export class HomeComponent implements OnInit {
 
   check = true;
   constructor() { }
+  
 
   ngOnInit() {
+   
 
     $('.button--bubble').each(function() {
       var $circlesTopLeft = $(this).parent().find('.circle.top-left');
@@ -62,11 +64,35 @@ export class HomeComponent implements OnInit {
     });
 
     $(document).ready(function () {
+      
+    (function ($) {
+      $('.sponsorOwl').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplayTimeout: 2000,
+          autoplayHoverPause: false,
+          autoplay: true,
+         responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    })(jQuery);
+
+      $('.filter-active').click();
       (function ($) {
         $('#testimonial-slider').owlCarousel({
-          items: 3,
+          items: 4,
           loop:true,
-          dots: false,
+          dots: true,
           autoplayTimeout: 2000,
           autoplayHoverPause: false,
           autoplay: true
@@ -82,8 +108,8 @@ export class HomeComponent implements OnInit {
     $(window).scroll(() => {
       
       const scroolPosition = $(window).scrollTop();
- 
-      if (scroolPosition >= 1000 && this.check) {
+      //console.log(scroolPosition)
+      if (scroolPosition >= 1550 && this.check) {
         console.log('GİRDİ');
 
         $('.count1').each(function () {
@@ -107,4 +133,11 @@ export class HomeComponent implements OnInit {
 
   }
 
+
+  scroll (divName) {
+       $('html, body').animate({
+          scrollTop: $(divName).offset().top
+      }, 700);
+   
+  }
 }
