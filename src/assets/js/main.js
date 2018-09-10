@@ -680,6 +680,7 @@ jQuery(document).ready(function ($) {
     render();
     var xTarget = (mousePos.x - windowHalfX);
     var yTarget = (mousePos.y - windowHalfY);
+     $('.clickMe').css({'left':mousePos.x-50,'top':mousePos.y-15})
 
     fan.isBlowing = isBlowing;
     fan.update(xTarget, yTarget);
