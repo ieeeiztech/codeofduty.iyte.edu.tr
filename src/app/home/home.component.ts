@@ -75,6 +75,7 @@ export class HomeComponent implements OnInit {
           loop: true,
           margin: 10,
           nav: false,
+          dots:false,
           autoplayTimeout: 2000,
           smartSpeed: 2500,
           slideTransition: 'linear',

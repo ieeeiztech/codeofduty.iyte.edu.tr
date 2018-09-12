@@ -67,8 +67,9 @@
     Hero Section
   ============================-->
   <section id="hero">
-      <div class="clickMe" ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();"
-      ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">Click for Wind</div>
+    <div class="clickMe" ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();"
+      ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">Click
+      for Wind</div>
 
     <div class="hero-container">
       <h1 class="headerText noselect">Welcome to Code of Duty</h1>
@@ -90,6 +91,11 @@
 
 
   <main id="main">
+    <div class="row text-center">
+      <div class="col-12">
+        <p class="notificationsHeader">Bildirimler</p>
+      </div>
+    </div>
     <div class="owlContainer">
       <div id="testimonial-slider" class="owl-carousel  owl-theme">
 
@@ -186,21 +192,49 @@
                 <div class="modal fade" id="brain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        brain
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+                    <div class="modal-body">
+                      <div class="c">
+
+                        <p id="brainDetailHeader">BrainHack</p>
+                        <div class="card-img-top-modal1"></div>
+
+                        <p>BrainHack, Code of Duty etkinliğinin, algoritma ve programlama üzerine meraklı kişileri bir
+                          araya getiren programlama yarışmasıdır. Yarışmacılardan beklenen farklı programlama
+                          dilleriyle farklı yapılardaki programlama sorularını belirli bir süre içerisinde doğru
+                          sonuçlara ulaştırmalarıdır. Kategorinin amacı programlama hakkında bilgilendirme,
+                          bilinçlendirme, farkındalık yaratma ve bu alanla uğraşan insanların tanışması için verimli
+                          bir ortam yaratmaktır.</p>
+
+                        <p><b>Kimler katılabilir?</b></p>
+                        <p>Katılımın ücretsiz olduğu ve kurumları temsilen oluşturulan takımların yanı sıra bağımsız
+                          ekiplerin de katılabildiği programlama yarışması; üniversite öğrencilerine, kamu
+                          kuruluşlarına oluşan ve diğer takımlara kendilerini gösterme imkanı ve tecrübe kazanımı
+                          sağlayacaktır. Etkinlik sayesinde eksikliklerinizi görerek kendinize ve ekibinize deneyim
+                          kazanımı sağlayabilirsiniz.</p>
+
+                        <p><b>Kategori Kuralları Nelerdir?</b></p>
+                        <ul style="list-style: none">
+                          <li>Bir takımdaki üye sayısı en az 2 ve en fazla 3 kişi olacaktır.</li>
+                          <li>Yarışmada aşağıda belirtilen dilleri kullanabilirsiniz:
+                            <ul>
+                              <li>C (C11)</li>
+                              <li>C++ (C++11)</li>
+                              <li>Java (7)</li>
+                              <li>Python (2, 3)</li>
+                            </ul>
+                          </li>
+                          <li>Yarışma İzmir Yüksek Teknoloji Enstitüsü kampüs alanında gerçekleşecektir.</li>
+                          <li>Yarışmacıların yarışma süresince soruları İnternet üzerinden yayınlaması, forum
+                            sayfalarına koyması, e-posta gibi yöntemlerle takım elemanları haricinde üçüncü şahıslar
+                            ile paylaşması diskalifiye sebebidir.</li>
+                          <li>Sorular zorluk derecelerine göre farklı puanlara sahiptir.</li>
+                          <li>Sorulan programlama sorularını belli bir sure zarfında çözmeniz beklenmektedir.</li>
+                          <li>Çözümlerin puanlandırılması çıktılar üzerinden gerçekleşecektir.</li>
+                        </ul>
                       </div>
                     </div>
+
                   </div>
                 </div>
 
@@ -223,19 +257,56 @@
                 <div class="modal fade" id="build" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        build
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+
+                    <div class="modal-body">
+                      <div class="c">
+
+                        <p id="buildupDetailHeader">BuildUp</p>
+                        <div class="card-img-top-modal2"></div>
+
+                        <p>BuildUp, Code of Duty etkinliğinin 48 saatlik bir oyun tasarlama ve geliştirme
+                          maratonudur. 48 saatlik maraton, konsepti GGJ (Global Game Jam), Ludum Dare gibi dünya
+                          çapında düzenlenen etkinliklere benzeyen ve Türkiye çapında düzenlenen bir Game Jam’dir.</p>
+
+                        <p>Bağımsız oyun geliştiricilerinin ve amatörlerin yaratıcılıklarını sergileyebilecekleri bir
+                          platform oluşturmayı hedefleyen BuildUp, takımlar halinde katılacak oyun
+                          geliştiricilerinin, organizasyon tarafından belirlenecek bir tema çerçevesinde sıfırdan bir
+                          oyun geliştirmeleri esasına dayanır. Etkinlik, oyun geliştirme dünyasına girmek isteyen
+                          herkese bir başlangıç noktası olmayı hedeflemektedir.</p>
+
+                        <p><b>Game Jam Nedir?</b></p>
+
+                        <p>Game Jam, oyun geliştiricilerinin hep birlikte oyun geliştirmeleri, bilgi ve tecrübe
+                          paylaşımı yapabilmeleri için düzenlenen bir etkinliktir.</p>
+                        <p>Game Jam’de genel olarak amaç, önceden belirlenmiş bir süre içinde oyun geliştirmektir.</p>
+                        <p>Birçok Game Jam’de oyun geliştirmeye başlanmadan önce bir tema belirlenir ve
+                          geliştiriciler oyunlarını bu tema üzerinden geliştirir. Bu şekilde geliştiriciler
+                          yaratıcılıklarını oyunlarında gösterme fırsatı bulur.</p>
+                        <p>Game Jam’ler genellikle yarışma şeklinde yapılır ve beğenilen oyunlara ödüller verilir.
+                          Ama asıl amaç yarışmak değil paylaşımdır.</p>
+
+                        <p><b>BuildUp Nasıl Olacak?</b></p>
+                        <ul style="list-style: none">
+                          <li>Etkinlik başlangıcında takımlara tema açıklanacak,</li>
+                          <li>Oyun geliştirme 48 saat sürecek,</li>
+                          <li>48 saatin sonunda kapanış törenine geçilecek ve takımlar oyunlarının sunumunu yapacak,</li>
+                          <li>Sunumlar sonunda jüri tarafından atmosfer (Oyunun görsel tasarımı, kullanıcı arayüzü ve
+                            ses efektleri), oynanabilirlik (Oyunun kontrol mekanizması ve kullanıcı ile etkileşim
+                            başarısı) ve kurgu (Oyun fikri, hikayesi ve tutarlılığı) &nbsp;kriterleri göz önüne
+                            alınarak değerlendirme yapılacaktır.</li>
+                        </ul>
+
+                        <p><b>Kategori Kuralları Nelerdir?</b></p>
+
+                        <p>BuildUp süresince oyun geliştiren yarışmacılar, oyunun yapımcılarıdır. Telif üzerinde de
+                          yapımcı olarak geşeceklerdir.Telif hakkı kategori sponsoru olan Ege İhracatçı Birlikleri'ne
+                          ait olacaktır. Ayrıca yarışmaya katılmakla oyunların IEEE İYTE öğrenci topluluğunca
+                          kullanma ve halka açık bir yerde sunma hakkı bulunduğunu kabul etmiş sayılırsınız.</p>
+                        <p>Başvurular grup olarak alınacaktır. Gruplar 4-6 kişiden oluşacaktır.</p>
+                        <p>Tema, açılış töreninde duyurulacağından bütün ekiplerin açılış töreninde bulunması
+                          gerekmektedir.</p>
+                        <p>Oyunlar mobil uyumlu ve offline şekilde oynanabilir olmalıdır (Unity kullanılmasında bir
+                          sakınca yoktur).</p>
                       </div>
                     </div>
                   </div>
@@ -259,19 +330,67 @@
                   aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
+
                       <div class="modal-body">
-                        hack
+                        <div class="c">
+
+                          <p id="hackDetailHeader">IzHack</p>
+                          <div class="card-img-top-modal3"></div>
+
+                          <p>İzmir Yüksek Teknoloji Enstitüsü’nde ilk olarak 2015 yılında yapılan siber güvenlik
+                            üzerine meraklı kişilerin katılabileceği CTF etkinliğidir. Siber güvenlik üzerine
+                            bilgilendirme, bilinçlendirme,farkındalık yaratma, ve eğitim amacıyla yapılan etkinlik, bu
+                            sene Code of Duty bünyesinde gerçekleştirilecektir.</p>
+
+                          <p><b>CTF nedir?</b></p>
+                          <p>Capture The Flag (bayrağı yakala) etkinliğinde güvenliğe meraklı kişiler; kriptoloji ve
+                            tersine mühendislik, web, forensic gibi çeşitli dallarda, belirlenen bayrağa diğer
+                            katılımcılardan önce ulaşmak için sistemlerdeki güvenlik açıklarından yararlanarak bayrağı
+                            yakalamaya çalışırlar.</p>
+
+                          <p><b>Kimler katılabilir?</b></p>
+                          <p>Katılımın ücretsiz olduğu ve kurumları temsilen oluşturulan takımların yanı sıra bağımsız
+                            ekiplerin de katılabildiği CTF; üniversite öğrencilerine, siber güvenlik meraklılarına,
+                            kamu kuruluşlarına kendilerini gösterme, tecrübe kazanma deneyimi sağlıyor.Etkinlik
+                            sayesinde eksikliklerinizi görerek kendinize ve ekibinize deneyim sağlayabilirsiniz.</p>
+
+                          <p><b>Kategori Kuralları Nelerdir?</b></p>
+
+                          <p>Etkinlik esnasında yarışmacılar, CTF ile ilgili soruları sadece yarışma alanındaki
+                            görevlilere sorabilirler.</p>
+
+                          <p>Bir takımdaki üye sayısı en az 3 ve en fazla 4 kişi olacaktır..</p>
+
+                          <p>Yarışmaya dış ağdan erişim mümkün olmayacaktır.</p>
+
+                          <p>Yarışmacıların ethernet girişli bilgisayar ile yarışmaya katılmaları gerekmektedir.</p>
+
+                          <p>Güvenlik açısından kurumsal veri bulunduran bilgisayarların / veri depolama ortamlarının
+                            yarışmaya getirilmemesi önerilmektedir. CTF ortamının güvenliği sağlanmış olmasına rağmen,
+                            yarışmacılar kendi bilgisayarlarının güvenliğinden sorumludur. Aksi davranıştan doğan
+                            zararlardan, yarışma esnasında oluşabilecek veri kayıplarından ekibimiz sorumlu değildir.</p>
+
+                          <p>Elde edilen bayrakların değiştirilmesi, taşınması veya silinmesi diskalifiye sebebidir.</p>
+
+                          <p>Yarışmacıların yarışma süresince soruları İnternet üzerinden yayınlaması, forum
+                            sayfalarına koyması, e-posta gibi yöntemlerle takım elemanları haricinde üçüncü şahıslar
+                            ile paylaşması diskalifiye sebebidir.</p>
+
+                          <p>Yarışma içerisinde herhangi bir cihaza veya sunucuya DoS/DDoS saldırısı gerçekleştirilmesi
+                            diskalifiye sebebidir.</p>
+
+                          <p>Etkinliğin yapıldığı yer ve CTF yarışma paneli sunucularına yapılacak DoS/DDoS, brute
+                            force, SQL Injection gibi her türlü saldırıda bulunmak, bulunanlar ile işbirliği içerisinde
+                            olmak veya teşebbüs etmek diskalifiye sebebidir. Sayılan saldırılar ve benzeri güvenlik
+                            ihlallerinin tespiti halinde, her türlü zararı, ihlalde bulunduğu tespit edilen
+                            yarışmacıdan talep etme hakkı ve ihlalin TCK ve diğer ilgili mevzuat kapsamında suç
+                            oluşturması durumunda Cumhuriyet Savcılığı nezdinde suç duyurusunda bulunma hakkı saklıdır.</p>
+
+                          <p>Sorular zorluk derecelerine göre farklı puanlara sahiptir. En çok puanı toplayan takım
+                            yarışmayı kazanacaktır.</p>
+                        </div>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -352,297 +471,297 @@
 
         <div class="row" id="portfolio-wrapper">
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-              <img  src="assets/img/COD_IMAGES/CoD_new/1.jpg">
+            <img src="assets/img/COD_IMAGES/CoD_new/1.jpg">
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/2.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/3.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/4.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/5.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/6.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/7.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/8.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/9.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/10.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/11.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-cod">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/CoD_new/12.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/1.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/2.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/3.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/4.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/5.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/6.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/7.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/8.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/9.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/10.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/11.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-buildup">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/build_new/12.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/1.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/2.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/3.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/4.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/5.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/6.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/7.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/8.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/9.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/10.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/11.jpg" alt="">
             </a>
           </div>
 
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-brainhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/brainhack_new/12.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/1.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/2.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/3.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/4.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/5.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/6.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/7.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/8.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/9.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/10.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/11.jpg" alt="">
             </a>
           </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-izhack">
-            <a >
+            <a>
               <img src="assets/img/COD_IMAGES/izhack_new/12.jpg" alt="">
             </a>
           </div>
@@ -757,103 +876,26 @@
     <section id="sponsors">
       <div class="owl-carousel owl-theme sponsorOwl">
         <div class="item"><img (click)="openInNewTab('https://www.bilimsenligi.com')" src="assets/img/sponsors/bilimsenligi.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')"  src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.jpg" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.linovi.com/')"  src="assets/img/sponsors/linovi.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://canyoupwn.me/')"  src="assets/img/sponsors/Logo-2-1.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.egebirlik.org.tr/')"  src="assets/img/sponsors/logwerqo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://octosec.net/')"  src="assets/img/sponsors/octosec.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://pluscloud.nl/en/')"  src="assets/img/sponsors/plusclouds-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://shiftdelete.net/')"  src="assets/img/sponsors/sdn-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://sitoplazma.com/')"  src="assets/img/sponsors/sitoplazma.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.turktelekom.com.tr/Sayfalar/Ana-Sayfa.aspx')"  src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.jpg" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.imza.com/')"  src="assets/img/sponsors/twgg.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.webtekno.com/')"  src="assets/img/sponsors/webtekno-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.parta.com.tr/')"  src="assets/img/sponsors/parta.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')" src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.jpg" /></div>
+        <div class="item"><img (click)="openInNewTab('http://www.linovi.com/')" src="assets/img/sponsors/linovi.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://canyoupwn.me/')" src="assets/img/sponsors/Logo-2-1.png" /></div>
+        <div class="item"><img (click)="openInNewTab('http://www.egebirlik.org.tr/')" src="assets/img/sponsors/logwerqo.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://octosec.net/')" src="assets/img/sponsors/octosec.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://pluscloud.nl/en/')" src="assets/img/sponsors/plusclouds-logo.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://shiftdelete.net/')" src="assets/img/sponsors/sdn-logo.png" /></div>
+        <div class="item"><img (click)="openInNewTab('http://sitoplazma.com/')" src="assets/img/sponsors/sitoplazma.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.turktelekom.com.tr/Sayfalar/Ana-Sayfa.aspx')" src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.jpg" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.imza.com/')" src="assets/img/sponsors/twgg.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.webtekno.com/')" src="assets/img/sponsors/webtekno-logo.png" /></div>
+        <div class="item"><img (click)="openInNewTab('http://www.parta.com.tr/')" src="assets/img/sponsors/parta.png" /></div>
+        <div class="item"><img (click)="openInNewTab('http://www.biletbayi.com/')" src="assets/img/sponsors/biletbayi.jpg" /></div>
 
       </div>
     </section>
 
     <!-- SPONSORS -->
 
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h3 class="section-title">Contact</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque</p>
-        </div>
-      </div>
 
-
-      <div class="container wow fadeInUp">
-        <div class="row justify-content-center">
-
-          <div class="col-lg-3 col-md-4">
-
-            <div class="info">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
-              </div>
-
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p>info@example.com</p>
-              </div>
-
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>+1 5589 55488 55s</p>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <a  class="twitter"><i class="fa fa-twitter"></i></a>
-              <a  class="facebook"><i class="fa fa-facebook"></i></a>
-              <a  class="instagram"><i class="fa fa-instagram"></i></a>
-              <a  class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a  class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="#" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-                    data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
-                    placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #contact -->
 
   </main>
 
@@ -861,25 +903,43 @@
     Footer
   ============================-->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.3090736826657!2d26.639131000000003!3d38.318673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb905952044137%3A0xc662faa08acdf9d0!2zxLB6bWlyIFnDvGtzZWsgVGVrbm9sb2ppIEVuc3RpdMO8c8O8!5e0!3m2!1str!2s!4v1432678286820"
+            width="100%" height="100%" frameborder="0" style="border:0"></iframe>
         </div>
       </div>
+
+      <div class="col-4">
+        <div>
+          <b>İYTE - IEEE Öğrenci Topluluğu</b><br>
+          İzmir Yüksek Teknoloji Enstitüsü<br>Gülbahçe Kampüsü Urla, İzmir<br>
+          <a href="http://ieee.iyte.edu.tr" target="_blank">ieee.iyte.edu.tr</a><br>
+          <a href="https://www.facebook.com/IEEEIYTE/" target="_blank">facebook</a><br>
+          <a href="https://twitter.com/IEEEIYTE" target="_blank">twitter</a><br>
+          <a href="https://www.linkedin.com/company/ieee-iztech-student-branch/" target="_blank">linkedin</a><br>
+          <img alt="" src="assets/img/sponsors/ieee.png">
+        </div>
+        <div class="clear"></div>
+        <p class="text-center"> Copyright 2018, Code of Duty. Tüm Hakları Saklıdır.
+        </p>
+      </div>
+      <div class="col-2"></div>
     </div>
 
 
   </footer><!-- #footer -->
 
-  <a  class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- The Modal -->
-<div id="myModal" (click)="unrender()" class="modal">
-     <img class="modal-content" id="img01">
-   </div>
+  <!-- The Modal -->
+  <div id="myModal" (click)="unrender()" class="modal">
+    <img class="modal-content" id="img01">
+  </div>
 
 </body>
 
- 
+
 </html>

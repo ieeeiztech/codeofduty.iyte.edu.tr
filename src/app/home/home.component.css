@@ -3,7 +3,7 @@
      position: absolute;
      width: auto;
      font-size: 1vw;
-     background-color: #3b58989a;
+     background-color: #3b589800;
      height: auto;
      top:0;
      padding: 2px;
@@ -12,24 +12,25 @@
      animation-name: click;
     animation-duration: 10s ;
     animation-iteration-count: infinite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
  }
  
  @keyframes click {
-    0% {background-color: #3b58989a;}
-    5% {background-color: #3b58983b;}
-    10% {background-color: #3b58989a;}
-    15% {background-color: #3b58983b;}
-    20% {background-color: #3b58989a;}
-    25% {background-color: #3b58983b;}
-    30% {background-color: #3b58989a;}
-    35% {background-color: #3b58983b;}
-    40% {background-color: #3b58989a;}
-    45% {background-color: #3b58983b;}
-    50% {background-color: #3b58989a;}
+    0% {background-color: #3b589800;}
+    5% {background-color: #3b589800;}
+    10% {background-color: #3b589800;}
+    15% {background-color: #3b589800;}
+    20% {background-color: #3b589800;}
+    25% {background-color: #3b589800;}
+    30% {background-color: #3b589800;}
+    35% {background-color: #3b589800;}
+    40% {background-color: #3b589800;}
+    45% {background-color: #3b589800;}
+    50% {background-color: #3b589800;}
     51% {opacity: 0}
     99% {opacity: 0}
-    100% { opacity: 1;background-color: #3b58989a;}
+    100% { opacity: 1;background-color: #3b589800;}
  
 
  }
@@ -100,10 +101,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.notificationsHeader {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(29, 29, 29);
+        background-color: #F7F7F7;
+    padding:1vh 0 0 4vw;
+    margin:0;
+ }
 
 .testimonial {
-    font-size:1vw;
-    color: rgb(71, 71, 71);
+    font-size:1.vw;
+    color: rgb(56, 56, 56);
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -150,6 +159,43 @@
     width: 400px;
 }
 
+.card-img-top-modal1 {
+    background: url('../../assets/img/logo_brainhack.png');
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 40vw;
+    margin-left: 25vw;
+    float: left;
+    margin-right: 25vw;
+}
+.card-img-top-modal2 {
+    background: url('../../assets/img/logo_buildup.png');
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 40vw;
+    margin-left: 25vw;
+    float: left;
+    margin-right: 25vw;
+}
+.card-img-top-modal3 {
+    background: url('../../assets/img/logo_izhack.png');
+    background-position: center;
+    background-size: 55%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 40vw;
+    margin-left: 25vw;
+    float: left;
+    margin-right: 25vw;
+}
+
 .card-img-top2 {
     background: url('../../assets/img/logo_buildup.png') center / cover;
     background-position: center;
@@ -161,7 +207,7 @@
 }
 
 .card-img-top3 {
-    background: url('../../assets/img/logo_izhack.jpg') center / cover;
+    background: url('../../assets/img/logo_izhack.png') center / cover;
     background-position: center;
     background-size: 55%;
     background-position-x: 50%;
@@ -337,7 +383,7 @@
 
 
 #portfolio img {
-  width: 40vw;
+  width: 30vw;
   padding-right: 10vw;
   margin-bottom: 5vw;
 }
@@ -383,15 +429,14 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+background-color: rgba(123, 123, 123, 0.211);}
 
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
+    height: 1px;
     max-width: 700px;
 }
 
@@ -448,4 +493,50 @@
     .modal-content {
         width: 100%;
     }
+}
+.modal-body {
+    margin:0;
+    padding:0;
+    width: 90vw;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: 1vw;
+ 
+}
+.modal-dialog {
+    padding:0;
+    margin: 0;
+}
+ .c {
+    padding-bottom: 2vh;
+
+ }
+#brain {
+    padding:10vh 0 0 5vw ;
+ }
+ #build {
+    padding:10vh 0 0 5vw ;
+
+ }
+ #hack {
+    padding:10vh 0 0 0vw ;
+
+ }
+ #brain p {
+     padding:1vh 2vw 0vh 0vw;
+ }
+ #build p {
+    padding:1vh 2vw 1vh 0vw;
+}
+#hack p {
+    padding:1vh 2vw 0vh 0vw;
+}
+ #buildupDetailHeader {
+     font-size: 4vw;
+ }
+ #brainDetailHeader {
+    font-size: 4vw;
+}
+#hackDetailHeader {
+    font-size: 4vw;
 }
