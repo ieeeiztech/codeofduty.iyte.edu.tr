@@ -70,17 +70,28 @@ export class HomeComponent implements OnInit {
 
     $(document).ready(function () {
 
+      $('.closeNotification').click(function(){
+        $('.panel').toggleClass('visible');
+
+      });
+      $('.notification-trigger').click(function() {
+        $('.panel').toggleClass('visible');
+      });
+
       (function ($) {
         $('.sponsorOwl').owlCarousel({
           loop: true,
           margin: 10,
           nav: false,
           dots:false,
+          autoHeight:true,
           autoplayTimeout: 2000,
           smartSpeed: 2500,
           slideTransition: 'linear',
           autoplayHoverPause: false,
-          autoplay: true,
+          autoplay: true, 
+          mouseDrag:false,
+          touchDrag:false,
           responsive: {
             0: {
               items: 1
@@ -162,9 +173,16 @@ export class HomeComponent implements OnInit {
   }
 
   scroll(divName) {
-    $('html, body').animate({
+    if(divName == "#footer") {
+      $('html, body').animate({
+        scrollTop: $(divName).offset().top -200
+      }, 700);
+    } else {
+      $('html, body').animate({
       scrollTop: $(divName).offset().top
     }, 700);
+    }
+    
 
   }
 

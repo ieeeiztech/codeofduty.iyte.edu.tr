@@ -19,22 +19,125 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active noselect"><a style="color:aliceblue;" (click)="scroll('#hero')">Home</a></li>
-          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#about')">About Us</a></li>
-          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#categories')">Categories</a></li>
-          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#sponsors')">Sponsors</a></li>
-          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#team')">Team</a></li>
-          <li class="noselect"><a style="color:aliceblue;">FAQ</a></li>
+          <li class="menu-active noselect"><a style="color:aliceblue;" (click)="scroll('#hero')"><i class="fas fa-home"></i></a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#about')">Hakkımızda</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#categories')">Kategoriler</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#sponsors')">Sponsorlar</a></li>
+          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#team')">Ekip</a></li>
+          <li class="noselect"><a data-toggle="modal" data-target="#faq" style="color:aliceblue;">S.S.S</a></li>
 
-          <li class="noselect"><a style="color:aliceblue;" (click)="scroll('#contact')">Contact</a></li>
-          <li class="noselect"><a style="color:rgb(198, 64, 54)"><b>TR</b></a></li>
+
+          <li><a style="color:aliceblue;" (click)="scroll('#footer')">İletişim</a></li>
+          <li class="noselect">
+            <a class="notification-trigger">
+              <i style="color:white" class="fas fa-bell"></i>
+              <div class='notification-num'>1</div>
+            </a>
+          </li>
 
 
 
         </ul>
       </nav><!-- #nav-menu-container -->
+
     </div>
   </header><!-- #header -->
+
+  <div class="panel">
+    <p class="closeNotification">X</p>
+    <div class="title">Notifications</div>
+    <ul class="notification-bar">
+      <li class="unread">
+        <i class="far fa-hand-point-up"></i>
+        <div>2018 yılı için başvurular sona ermiştir. (yeni)</div>
+      </li>
+
+      <li>
+        <i class="far fa-hand-point-down"></i>
+        <div>Niyet mektubu örneği için tıklayınız.</div>
+      </li>
+      <li>
+        <i class="far fa-hand-point-down"></i>
+        <div>Dereceye giren olan ve Hacktrick
+          etkinliğinde kazanacaktır.</div>
+      </li>
+      <li>
+        <i class="far fa-hand-point-down"></i>
+        <div>Niyet mektubu örneği için tıklayınız.</div>
+      </li>
+      <li>
+        <i class="far fa-hand-point-down"></i>
+        <div>Etkinlikteki program akışı için tıklanıyınız. </div>
+      </li>
+
+      <li>
+        <i class="far fa-hand-point-down"></i>
+        <div>Dereceye giren olan ve Hacktrick
+          etkinliğinde kazanacaktır.</div>
+      </li>
+
+    </ul>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="faq" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-body">
+        <div class="c">
+          <h2 class="text-center">Sıkça Sorulan Sorular</h2>
+          <ul class="sss">
+            <li>
+              <h3>CodeOfDuty nedir?</h3>
+              <p>Code of Duty, IzHack(siber güvenlik), BrainHack(algoritma geliştirme) ve BuildUp(oyun geliştirme)
+                isimli 3 ana kategorisiyle 3 farklı alanda 3 ayrı yarışmayı bünyesinde barındıran 48 saat sürecek bir
+                etkinliktir.</p>
+            </li>
+            <li>
+              <h3>Amaç nedir?</h3>
+              <p>Heyecanlı bir ortam yaratarak yazılım alanıyla ilgilenen kişilere birbirleriyle mücadele etme ve
+                Türkiye’nin her kesiminden yazılım alanıyla ilgili öğrencileri ve yazılım sektörünü bir araya getirerek
+                tanışma fırsatı sunmaktır.</p>
+            </li>
+            <li>
+              <h3>Ne zaman ve nerede?</h3>
+              <p>9-10-11 Mart 2018 tarihlerinde İzmir Yüksek Teknoloji Enstitüsü Kampüsünde gerçekleşecektir.</p>
+            </li>
+            <li>
+              <h3>Kim düzenliyor?</h3>
+              <p>Biz IEEE İYTE öğrenci topluluğu olarak sponsorlarımızın da desteğiyle bu etkinliği düzenliyoruz.</p>
+            </li>
+            <li>
+              <h3>Yarışmaya katılımcı sayısı sınırlı mı?</h3>
+              <p>Evet, farklı sayıda kişiler bulundurmakla beraber her kategoriden 16’şar takım kabul edilecektir.
+                BuildUp takımları 4-6, BrainHack takımları 2-3, IzHack takımları ise 3-4 kişiden oluşmalıdır.</p>
+            </li>
+            <li>
+              <h3>Başvurular bireysel mi olacak, takım halinde mi?</h3>
+              <p>Başvurular yalnızca takımlar halinde olmalıdır.</p>
+            </li>
+            <li>
+              <h3>Nerede konaklayacağım?</h3>
+              <p>Tarafımızdan herhangi bir konaklama düzenlemesi yapılmamaktadır. Fakat uyku tulumu, kamp malzemesi vb.
+                yanınızda getirerek etkinlik alanında uyku için ayrılan alanlarda konaklayabilirsiniz.</p>
+            </li>
+            <li>
+              <h3>İhtiyaçlarımı nerede/nasıl karşılayacağım?</h3>
+              <p>Yiyecek ve içecek ihtiyaçlarınız ise ekibimiz tarafından karşılanacaktır.</p>
+            </li>
+            <li>
+              <h3>Herhangi bir eğitim olacak mı?</h3>
+              <p>Hayır, eğitim olmayacaktır.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="socialContainer">
     <ul class="social">
@@ -68,14 +171,15 @@
   ============================-->
   <section id="hero">
     <div class="clickMe" ondragstart="return false" draggable="false" ondragenter="event.dataTransfer.dropEffect='none'; event.stopPropagation(); event.preventDefault();"
-      ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">Click
-      for Wind</div>
+      ondragover="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();" ondrop="event.dataTransfer.dropEffect='none';event.stopPropagation(); event.preventDefault();">Rüzgar
+      için tıklayınız</div>
 
     <div class="hero-container">
-      <h1 class="headerText noselect">Welcome to Code of Duty</h1>
-      <h2 class="welcomingText noselect">We are getting ready for a better future 😄</h2>
+      <h1 class="headerText noselect">Code of Duty'ye Hoşgeldiniz</h1>
+      <h2 class="welcomingText noselect"> <img width="15vh" src="assets\img\1.png"> ETKİNLİKTEN <img width="15vh" src="assets\img\3.png">
+        KAT FAZLASI</h2>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScfK6Jb-N7BWdw7mpM5sLI86heehoWvB75csLb6wceZkDnLWg/viewform?usp=send_form"
-        target="_blank" class="btn-get-started noselect">LET'S JOIN US!</a>
+        target="_blank" class="btn-get-started noselect">Aramıza Katıl!</a>
     </div>
 
 
@@ -91,43 +195,7 @@
 
 
   <main id="main">
-    <div class="row text-center">
-      <div class="col-12">
-        <p class="notificationsHeader">Bildirimler</p>
-      </div>
-    </div>
-    <div class="owlContainer">
-      <div id="testimonial-slider" class="owl-carousel  owl-theme">
 
-        <div class="testimonial">
-          <div class="aaa">
-
-            <p>Etkinlikteki program akışı için tıklanıyınız. </p>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="aaa">
-            <p>Niyet mektubu örneği için tıklayınız. </p>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="aaa">
-            <p>Dereceye giren olan ve Hacktrick
-              etkinliğinde kazanacaktır.</p>
-          </div>
-        </div>
-
-        <div class="testimonial">
-          <div class="aaa">
-
-            <p>2018 yılı için başvurular sona ermiştir. </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
 
     <!--==========================
       About Us Section
@@ -137,24 +205,25 @@
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <p class="aboutUsHeader"> About Us</p>
+            <p class="aboutUsHeader"> Hakkımızda</p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-lg-12">
             <br>
-            <p class="aboutText">IEEE İYTE öğrenci topluluğu tarafından 9-10-11 Mart 2018 tarihinde ilki düzenlenecek
-              olan etkinliğimiz Code of Duty, heyecanlı bir ortam yaratarak
-              yazılım alanıyla ilgilenen kişilere birbirleriyle mücadele etme ve bununla birlikte Türkiye’nin her
-              kesiminden öğrencileri ve yazılım sektörünü bir
-              araya getirerek tanışma fırsatı sunan bir oluşumdur.</p>
+            <p class="aboutText">Code of Duty, IEEE İYTE öğrenci topluluğu tarafından gerçekleştirilecek bir yazılım
+              maratonudur. Code of Duty'nin amacı yazılım alanıyla ilgilenen kişilere birbirleriyle mücadele etme
+              fırsatı sunmakla birlikte Türkiye’nin her kesiminden öğrencileri ve yazılım sektörünü bir araya getirerek
+              tanışma olanağı sağlamaktır.Ülkemizde daha önce benzeri yapılmamış olan bu etkinliği diğer
+              organizasyonlardan farklı kılan nokta yetenekli ve yazılım konusunda ilgili olduğu ölçüde bilgiye de
+              sahip kişileri ortaya çıkarmayı ve de sektörün ihtiyacı olan donanımlı işgücü ile tanıştırmayı birincil
+              hedef olarak gütmesidir. Bu hedefine ise tek bir alanla sınırlı kalmayıp Siber Güvenlik, Oyun Geliştirme
+              ve Algoritma alanlarında donanımlı kişileri buluşturarak ulaşmak istemektedir. Bu amaçlar doğrultusunda
+              etkinliğimiz üç ana kategoriden oluşmaktadır: IzHack, BuildUp, BrainHack. Her bir kategori kendi
+              konseptine sahip olmakla birlikte farklı değerlendirmelere tabi tutulacaktır.</p>
             <br>
-            <p class="aboutText">IEEE İYTE öğrenci topluluğu tarafından 9-10-11 Mart 2018 tarihinde ilki düzenlenecek
-              olan etkinliğimiz Code of Duty, heyecanlı bir ortam yaratarak
-              yazılım alanıyla ilgilenen kişilere birbirleriyle mücadele etme ve bununla birlikte Türkiye’nin her
-              kesiminden öğrencileri ve yazılım sektörünü bir
-              araya getirerek tanışma fırsatı sunan bir oluşumdur.</p>
+
           </div>
         </div>
 
@@ -167,6 +236,8 @@
 
     </section>
 
+
+
     <!-- #categories -->
     <section id="categories">
 
@@ -174,7 +245,7 @@
 
         <div style="margin-bottom: 4vh" class="row">
           <div class="col-lg-12 text-center">
-            <p class="categoriesHeader"> Categories</p>
+            <p class="categoriesHeader"> Kategoriler</p>
           </div>
         </div>
 
@@ -184,9 +255,9 @@
               <div class="card-img-top"></div>
               <div class="card-body">
                 <h4 class="card-title">BrainHack</h4>
-                <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
-                  doesn't distort your content.</p>
-                <button type="button" class="brainBtn" data-toggle="modal" data-target="#brain">Details</button>
+                <p class="card-text">BrainHack, yarışmacıların 48 saatte onlara verilen problemleri C, Python ve Java
+                  dilleriyle çözmeleri beklenen bir "Algoritma Geliştirme" yarışmasıdır.</p>
+                <button type="button" class="brainBtn" data-toggle="modal" data-target="#brain">Detaylar</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="brain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -217,7 +288,7 @@
                         <ul style="list-style: none">
                           <li>Bir takımdaki üye sayısı en az 2 ve en fazla 3 kişi olacaktır.</li>
                           <li>Yarışmada aşağıda belirtilen dilleri kullanabilirsiniz:
-                            <ul>
+                            <ul style="list-style: none">
                               <li>C (C11)</li>
                               <li>C++ (C++11)</li>
                               <li>Java (7)</li>
@@ -248,9 +319,9 @@
               <div class="card-img-top2"></div>
               <div class="card-body">
                 <h4 class="card-title">BuildUp</h4>
-                <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
-                  doesn't distort your content.</p>
-                <button class="buildBtn" data-toggle="modal" data-target="#build">Details</button>
+                <p class="card-text">BuildUp, yarışmacıların 48 saatte onlara verilen fotoğraf/video çerçevesinde oyun
+                  geliştirdikleri ve sundukları Global Game Jam (GGJ) tarzı bir yarışmadır.</p>
+                <button class="buildBtn" data-toggle="modal" data-target="#build">Detaylar</button>
 
 
                 <!-- Modal -->
@@ -322,9 +393,9 @@
               <div class="card-img-top3"></div>
               <div class="card-body">
                 <h4 class="card-title">IzHACK</h4>
-                <p class="card-text">Use these styles to create a slick, anguluar-looking Bootstrap 4 card element that
-                  doesn't distort your content.</p>
-                <button class="hackBtn" data-toggle="modal" data-target="#hack">Details</button>
+                <p class="card-text">IzHack, yarışmacıların 48 saatte onlara verilen çeşitli kategorilerde belirlenen
+                  bayrağa diğer katılımcılardan önce ulaşıp puan aldıklar CTF yarışmasıdır.</p>
+                <button class="hackBtn" data-toggle="modal" data-target="#hack">Detaylar</button>
                 <!-- Modal -->
                 <div class="modal fade" id="hack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                   aria-hidden="true">
@@ -407,35 +478,53 @@
     </section>
     <!-- #categories -->
 
+
+
+
+    <!-- SPONSORS -->
+    <section id="sponsors">
+      <h2 class="section-title text-center">2019 Sponsorları</h2>
+
+      <div class="owl-carousel owl-theme sponsorOwl">
+        <div class="item"><img (click)="openInNewTab('https://www.bilimsenligi.com')" src="assets/img/sponsors/bilimsenligi.png" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')" src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.png" /></div>
+
+
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+
+
     <!--==========================
       Facts Section
     ============================-->
     <section id="facts">
       <div class="container wow fadeIn">
         <div class="section-header">
-          <h3 class="section-title">Code Of Duty With numbers</h3>
-          <p class="section-description">Here are numbers of Code of Duty'18</p>
+          <h3 class="section-title">Sayılarla Code Of Duty</h3>
+
         </div>
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <h1 class="count1">136</h1>
-            <p>Participant</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <h1 class="count1">23</h1>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
             <h1 class="count1">48</h1>
-            <p>Hours Of Hack</p>
+            <p>Saat</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <h1 class="count1">10.200</h1>
-            <p> Price of distributed ₺</p>
+            <h1 class="count1">200</h1>
+            <p>Katılımcı</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <h1 class="count1">40</h1>
+            <p>Ekip</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <h1 class="count1">15</h1>
+            <p> Oyun </p>
           </div>
 
         </div>
@@ -451,9 +540,8 @@
     <section id="portfolio">
       <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">What Happened last year?</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque</p>
+          <h3 class="section-title">Geçtiğimiz Yıl Neler Oldu?</h3>
+          <p class="section-description">Keşke geçtiğimiz yıl da aramızda olsaydın 😕 İşte kaçırdıkların:</p>
         </div>
         <div class="row">
 
@@ -463,7 +551,7 @@
               <li data-filter=".filter-buildup">Buildup</li>
               <li data-filter=".filter-brainhack">brainhack</li>
               <li data-filter=".filter-izhack">izhack</li>
-              <li data-filter=".filter-cod, .filter-buildup, .filter-brainhack, .filter-izhack">All</li>
+              <li data-filter=".filter-cod, .filter-buildup, .filter-brainhack, .filter-izhack">Tümü</li>
 
             </ul>
           </div>
@@ -764,15 +852,11 @@
             <a>
               <img src="assets/img/COD_IMAGES/izhack_new/12.jpg" alt="">
             </a>
-          </div>
-
-
-
-
-
+          </div> 
         </div>
 
       </div>
+      
     </section><!-- #portfolio -->
 
     <!--==========================
@@ -781,9 +865,8 @@
     <section id="team">
       <div class="container wow fadeInUp">
         <div class="section-header">
-          <h3 class="section-title">Team</h3>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque</p>
+          <h3 class="section-title">Ekip</h3>
+          <p class="section-description">Muhteşem ekibmizle tanışın!</p>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -805,6 +888,16 @@
               <a href="https://www.linkedin.com/company/ieee-iztech-student-branch/"><i class="fab fa-linkedin fa-2x"></i></a>
 
 
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/14.jpg" alt=""></div>
+              <h4>İrem Kulaksız</h4>
+              <span>BuildUp Mentor</span>
+              <a href="https://twitter.com/IEEEIYTE"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
+              <a href="https://www.linkedin.com/company/ieee-iztech-student-branch/"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
           </div>
 
@@ -858,15 +951,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/14.jpg" alt=""></div>
-              <h4>İrem Kulaksız</h4>
-              <span>BuildUp Mentor</span>
-              <a href="https://twitter.com/IEEEIYTE"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp;
-              <a href="https://www.linkedin.com/company/ieee-iztech-student-branch/"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
-          </div>
+
         </div>
 
       </div>
@@ -874,9 +959,11 @@
 
     <!-- SPONSORS -->
     <section id="sponsors">
+      <h2 class="section-title text-center">2018 Sponsorları</h2>
+
       <div class="owl-carousel owl-theme sponsorOwl">
         <div class="item"><img (click)="openInNewTab('https://www.bilimsenligi.com')" src="assets/img/sponsors/bilimsenligi.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')" src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.jpg" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')" src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.png" /></div>
         <div class="item"><img (click)="openInNewTab('http://www.linovi.com/')" src="assets/img/sponsors/linovi.png" /></div>
         <div class="item"><img (click)="openInNewTab('https://canyoupwn.me/')" src="assets/img/sponsors/Logo-2-1.png" /></div>
         <div class="item"><img (click)="openInNewTab('http://www.egebirlik.org.tr/')" src="assets/img/sponsors/logwerqo.png" /></div>
@@ -884,7 +971,7 @@
         <div class="item"><img (click)="openInNewTab('https://pluscloud.nl/en/')" src="assets/img/sponsors/plusclouds-logo.png" /></div>
         <div class="item"><img (click)="openInNewTab('https://shiftdelete.net/')" src="assets/img/sponsors/sdn-logo.png" /></div>
         <div class="item"><img (click)="openInNewTab('http://sitoplazma.com/')" src="assets/img/sponsors/sitoplazma.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.turktelekom.com.tr/Sayfalar/Ana-Sayfa.aspx')" src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.jpg" /></div>
+        <div class="item"><img (click)="openInNewTab('https://www.turktelekom.com.tr/Sayfalar/Ana-Sayfa.aspx')" src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.png" /></div>
         <div class="item"><img (click)="openInNewTab('https://www.imza.com/')" src="assets/img/sponsors/twgg.png" /></div>
         <div class="item"><img (click)="openInNewTab('https://www.webtekno.com/')" src="assets/img/sponsors/webtekno-logo.png" /></div>
         <div class="item"><img (click)="openInNewTab('http://www.parta.com.tr/')" src="assets/img/sponsors/parta.png" /></div>
@@ -904,15 +991,15 @@
   ============================-->
   <footer id="footer">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-4">
+      <div class="col-1"></div>
+      <div class="col-6">
         <div id="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.3090736826657!2d26.639131000000003!3d38.318673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb905952044137%3A0xc662faa08acdf9d0!2zxLB6bWlyIFnDvGtzZWsgVGVrbm9sb2ppIEVuc3RpdMO8c8O8!5e0!3m2!1str!2s!4v1432678286820"
-            width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+            frameborder="0" style="border:0;height:50vh;width:100%"></iframe>
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-3">
         <div>
           <b>İYTE - IEEE Öğrenci Topluluğu</b><br>
           İzmir Yüksek Teknoloji Enstitüsü<br>Gülbahçe Kampüsü Urla, İzmir<br>
