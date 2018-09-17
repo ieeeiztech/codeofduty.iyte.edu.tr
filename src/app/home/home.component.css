@@ -15,6 +15,11 @@
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
+ #codeLogo {
+     height: 8vh;
+     width: auto;
+ }
+
  @keyframes click {
      0% {
          background-color: #3b589800;
@@ -59,6 +64,10 @@
          opacity: 1;
          background-color: #3b589800;
      }
+ }
+
+ .noselect {
+     cursor: pointer;
  }
 
  .socialContainer {
@@ -455,6 +464,10 @@
      max-width: 700px;
  }
 
+ #team {
+     background-color: #F7F7F7;
+ }
+
  /* Caption of Modal Image */
 
  #caption {
@@ -648,7 +661,6 @@
      z-index: 3;
      width: 100%;
      box-shadow: 3px 5px 10px 0px rgba(164, 164, 164, 0.728);
-
  }
 
  @media screen and (min-width: 768px) {
@@ -656,7 +668,7 @@
          width: 300px;
          right: 0;
          border: 1px solid #ddd;
-      }
+     }
  }
 
  ul.notification-bar {
@@ -676,13 +688,12 @@
  .notification-bar li div {
      margin-left: 50px;
      margin-top: -40px;
-      padding: 10px;
+     padding: 10px;
      background-color: #eeede8;
      border-radius: 3px;
      font-size: 14px;
      color: #7b7a76;
-      cursor: pointer;
-
+     cursor: pointer;
  }
 
  .notification-bar li i {
@@ -697,6 +708,9 @@
      color: #008dcb;
  }
 
+ .notification-bar a {
+     color:white;
+ }
  .notification-bar li.unread i {
      background-color: #008dcb;
      color: #fff;
@@ -716,7 +730,6 @@
      background-color: #ddd;
      margin-top: 8px;
      z-index: -1;
-
  }
 
  .notification-bar:after {
@@ -733,3 +746,35 @@
  .content {
      text-align: center;
  }
+
+ /*RESPONSIVES*/
+
+ @media (max-width: 768px) {
+     
+     .clickMe {
+         display: none;
+     }
+     #world {
+         display: none;
+     }
+     #codeLogo {
+         width: 35vw !important;
+     }
+     #portfolio img {
+         width: 100vw;
+         padding-right: 10vw;
+         margin-bottom: 5vw;
+     }
+     .notification-trigger {
+         width: 10vw !important;
+     }
+     .notification-num {
+margin-right: 4vw;
+     }
+   
+ }
+ @media (min-width: 768px) {
+    #noPhone {
+        display: none;
+    }
+}

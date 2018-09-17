@@ -754,7 +754,7 @@ jQuery(document).ready(function ($) {
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
-    var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
+    /* var $mobile_nav = $('#nav-menu-container').clone().prop({ id: 'mobile-nav' });
     $mobile_nav.find('> ul').attr({ 'class': '', 'id': '' });
     $('body').append($mobile_nav);
     $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
@@ -782,7 +782,7 @@ jQuery(document).ready(function ($) {
           $('#mobile-body-overly').fadeOut();
         }
       }
-    });
+    }); */
   } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
