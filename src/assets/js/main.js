@@ -729,7 +729,7 @@ jQuery(document).ready(function ($) {
     if ($(this).scrollTop() > 300) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
-      $('#codeLogo').css({ 'margin-top': '-3vh' })
+      $('#codeLogo').css({ 'margin-top': '-1.5vh' })
     } 
      else {
       $('.back-to-top').fadeOut('slow');

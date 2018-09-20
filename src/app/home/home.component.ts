@@ -69,6 +69,9 @@ export class HomeComponent implements OnInit {
     });
 
     $(document).ready(function () {
+      setTimeout(() => {
+        $('.splashCont').hide()
+      }, 3500);
 
       $(window).scrollTop(0);
 

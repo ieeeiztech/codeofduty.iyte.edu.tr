@@ -1,3 +1,22 @@
+ .splashCont {
+     width: 100vw;
+     height: 100vh;
+     background-color: white;
+     position: fixed;
+     top: 0;
+     z-index: 99999999999999999;
+     display: none;
+ }
+
+ #splashImg {
+     height: 45%;
+     width: 45%;
+     float: left;
+     margin-left: 25.5%;
+     margin-top: 12.5%;
+ }
+
+
  .clickMe {
      color: white;
      position: absolute;
@@ -14,12 +33,7 @@
      animation-iteration-count: infinite;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
-
- #codeLogo {
-     height: 8vh;
-     width: auto;
- }
-
+ 
  @keyframes click {
      0% {
          background-color: #3b589800;
@@ -626,7 +640,25 @@
      right: -11px;
      font-size: 10px;
  }
+ .notification-num {
+    animation-name: wink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ }
 
+  
+ @keyframes wink {
+    0% {
+       opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+   100% {
+    opacity: 1;
+}
+
+}
  .closeNotification {
      position: absolute;
      top: 0;
@@ -709,8 +741,9 @@
  }
 
  .notification-bar a {
-     color:white;
+     color: white;
  }
+
  .notification-bar li.unread i {
      background-color: #008dcb;
      color: #fff;
@@ -750,16 +783,13 @@
  /*RESPONSIVES*/
 
  @media (max-width: 768px) {
-     
      .clickMe {
          display: none;
      }
      #world {
          display: none;
      }
-     #codeLogo {
-         width: 35vw !important;
-     }
+     
      #portfolio img {
          width: 100vw;
          padding-right: 10vw;
@@ -769,12 +799,12 @@
          width: 10vw !important;
      }
      .notification-num {
-margin-right: 4vw;
+         margin-right: 4vw;
      }
-   
  }
+
  @media (min-width: 768px) {
-    #noPhone {
-        display: none;
-    }
-}
+     #noPhone {
+         display: none;
+     }
+ }

@@ -23,8 +23,7 @@ export const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent }]
+  { path: '' ,component: HomeComponent } ]
 @NgModule({
   declarations: [
     AppComponent,

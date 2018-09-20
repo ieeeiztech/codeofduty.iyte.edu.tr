@@ -124,15 +124,14 @@ h1, h2, h3, h4, h5, h6 {
  
 }
 #codeLogo {
-  width: 10vw!important  
+  width: 4vw!important  
 }
-
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   #codeLogo {
-    width: 7vw!important  
+    width: 15vw!important  
   }
-
 }
+ 
 
 #header.header-fixed {
   background: rgba(91, 96, 100, 0.741);
