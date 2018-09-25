@@ -1,11 +1,9 @@
 /*!
  * hoverIntent v1.8.1 // 2014.08.11 // jQuery v1.9.1+
- * http://briancherne.github.io/jquery-hoverIntent/
- *
+  *
  * You may use hoverIntent under the terms of the MIT license. Basically that
  * means you are free to use hoverIntent as long as this header is left intact.
- * Copyright 2007, 2014 Brian Cherne
- */
+  */
 
 /* hoverIntent is similar to jQuery's built-in "hover" method except that
  * instead of firing the handlerIn function immediately, hoverIntent checks
@@ -27,8 +25,7 @@
  * @param  handlerIn   function OR configuration object
  * @param  handlerOut  function OR selector for delegation OR undefined
  * @param  selector    selector OR undefined
- * @author Brian Cherne <brian(at)cherne(dot)net>
- */
+  */
 
 ;(function(factory) {
     'use strict';

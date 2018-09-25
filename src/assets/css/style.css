@@ -124,11 +124,11 @@ h1, h2, h3, h4, h5, h6 {
  
 }
 #codeLogo {
-  width: 4vw!important  
+  width: 4vw;
 }
 @media (max-width: 768px) {
   #codeLogo {
-    width: 15vw!important  
+    width: 15vw;
   }
 }
  

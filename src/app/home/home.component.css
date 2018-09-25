@@ -8,6 +8,11 @@
      display: none;
  }
 
+
+ #sponsors .item {
+
+    width:15vw
+ }
  #splashImg {
      height: 45%;
      width: 45%;

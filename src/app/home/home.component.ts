@@ -15,6 +15,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
+    $(".newSponsor").on('click', (e) => {
+       console.log(e);
+      
+    });
+
+
     $("#portfolio img").on('click', (e) => {
       var val = ((e.target as HTMLImageElement).src.toString()).replace('http://localhost:4200/', '');
       this.image(val)
@@ -84,12 +90,15 @@ export class HomeComponent implements OnInit {
       });
 
       (function ($) {
+
+        
+
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
-          $('.sponsorOwl').owlCarousel({
+
+          $('.sponsorNewOwl').owlCarousel({
             loop: true,
-            margin: 10,
-            nav: false,
+             nav: false,
             dots: false,
             autoplayTimeout: 1500,
             smartSpeed: 1500,
@@ -98,70 +107,63 @@ export class HomeComponent implements OnInit {
             autoplay: true,
             mouseDrag: false,
             touchDrag: false,
-            responsive: {
-              0: {
-                items: 1
-              },
-              600: {
-                items: 3
-              },
-              1000: {
-                items: 5
-              }
-            }
+             
+            
           })
-        } else {
+
+
+
           $('.sponsorOwl').owlCarousel({
             loop: true,
-            margin: 10,
-            nav: false,
-            dots:false,
-            autoHeight:true,
-            autoplayTimeout: 2000,
-            smartSpeed: 2000,
+             nav: false,
+            dots: false,
+            autoplayTimeout: 1500,
+            smartSpeed: 1500,
             slideTransition: 'linear',
             autoplayHoverPause: false,
-            autoplay: true, 
-            mouseDrag:false,
-            touchDrag:false,
-            responsive: {
-              0: {
-                items: 1
-              },
-              600: {
-                items: 3
-              },
-              1000: {
-                items: 5
-              }
-            }
+            autoplay: true,
+            mouseDrag: false,
+            touchDrag: false,
+            
           })
+        } else {
+
+
+
+          $('.sponsorNewOwl').owlCarousel({
+            loop: true,
+             nav: false,
+            dots: false,
+            autoplayTimeout: 1500,
+            smartSpeed: 1500,
+            slideTransition: 'linear',
+            autoplayHoverPause: false,
+            autoplay: true,
+            mouseDrag: false,
+            touchDrag: false,
+            
+          })
+
+          $('.sponsorOwl').owlCarousel({
+            loop: true,
+             nav: false,
+            dots: false,
+            autoplayTimeout: 1500,
+            smartSpeed: 1500,
+            slideTransition: 'linear',
+            autoplayHoverPause: false,
+            autoplay: true,
+            mouseDrag: false,
+            touchDrag: false,
+            
+          });
+
+
+         
+
+          
         }
-        $('.sponsorOwl').owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: false,
-          dots: false,
-          autoHeight: true,
-          autoplayTimeout: 2000,
-          smartSpeed: 2000,
-          slideTransition: 'linear',
-          autoplayHoverPause: false,
-          autoplay: true,
-          mouseDrag: false,
-          touchDrag: false,
-          responsive: {
-            0: {
-              items: 1
-            },
-            600: {
-              items: 3
-            },
-            1000: {
-              items: 5
-            }
-          }
-        })
+       
       })(jQuery);
 
       $('.filter-active').click();
@@ -248,5 +250,9 @@ export class HomeComponent implements OnInit {
     console.log('GİRDİ KNK ',url)
     var win = window.open(url, '_blank');
     win.focus();
+  }
+
+  getSponsor(test) {
+    console.log(test)
   }
 }

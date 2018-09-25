@@ -730,6 +730,13 @@ jQuery(document).ready(function ($) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
       $('#codeLogo').css({ 'margin-top': '-1.5vh' })
+      if($(window).width() > 600)  {
+        $('#codeLogo').css({ 'width': '3vw' })
+        
+      }  else {
+        $('#codeLogo').css({ 'width': '12vw' })
+
+      }
     } 
      else {
       $('.back-to-top').fadeOut('slow');
@@ -745,6 +752,7 @@ jQuery(document).ready(function ($) {
 
   // Initiate the wowjs
   new WOW().init();
+  console.log('MUSTAFA')
 
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
