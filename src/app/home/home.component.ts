@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import * as $ from 'jquery';
-import { TweenMax, TimelineLite, Ease, TweenLite, SlowMo, Elastic } from 'gsap'
-
+ 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,11 +14,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    $(".newSponsor").on('click', (e) => {
-       console.log(e);
-      
-    });
-
+    
 
     $("#portfolio img").on('click', (e) => {
       var val = ((e.target as HTMLImageElement).src.toString()).replace('http://localhost:4200/', '');
@@ -27,7 +22,7 @@ export class HomeComponent implements OnInit {
     });
 
 
-    $('.button--bubble').each(function () {
+   /*  $('.button--bubble').each(function () {
       var $circlesTopLeft = $(this).parent().find('.circle.top-left');
       var $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
 
@@ -72,7 +67,7 @@ export class HomeComponent implements OnInit {
       $(this).on('mouseover', function () {
         btTl.restart();
       });
-    });
+    }); */
 
     $(document).ready(function () {
       setTimeout(() => {
@@ -89,100 +84,20 @@ export class HomeComponent implements OnInit {
         $('.panel').toggleClass('visible');
       });
 
-      (function ($) {
+ 
 
         
 
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-
-          $('.sponsorNewOwl').owlCarousel({
-            loop: true,
-             nav: false,
-            dots: false,
-            autoplayTimeout: 1500,
-            smartSpeed: 1500,
-            slideTransition: 'linear',
-            autoplayHoverPause: false,
-            autoplay: true,
-            mouseDrag: false,
-            touchDrag: false,
-             
-            
-          })
-
-
-
-          $('.sponsorOwl').owlCarousel({
-            loop: true,
-             nav: false,
-            dots: false,
-            autoplayTimeout: 1500,
-            smartSpeed: 1500,
-            slideTransition: 'linear',
-            autoplayHoverPause: false,
-            autoplay: true,
-            mouseDrag: false,
-            touchDrag: false,
-            
-          })
-        } else {
-
-
-
-          $('.sponsorNewOwl').owlCarousel({
-            loop: true,
-             nav: false,
-            dots: false,
-            autoplayTimeout: 1500,
-            smartSpeed: 1500,
-            slideTransition: 'linear',
-            autoplayHoverPause: false,
-            autoplay: true,
-            mouseDrag: false,
-            touchDrag: false,
-            
-          })
-
-          $('.sponsorOwl').owlCarousel({
-            loop: true,
-             nav: false,
-            dots: false,
-            autoplayTimeout: 1500,
-            smartSpeed: 1500,
-            slideTransition: 'linear',
-            autoplayHoverPause: false,
-            autoplay: true,
-            mouseDrag: false,
-            touchDrag: false,
-            
-          });
-
-
-         
-
-          
-        }
        
-      })(jQuery);
 
       $('.filter-active').click();
-      (function ($) {
-        $('#testimonial-slider').owlCarousel({
-          items: 4,
-          loop: true,
-          dots: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: false,
-          autoplay: true
-        });
-      })(jQuery);
+    
     });
 
-    TweenMax.from('.headerText', 1, { y: -100, opacity: 1 });
+   /*  TweenMax.from('.headerText', 1, { y: -100, opacity: 1 });
     TweenMax.from('.welcomingText', 1, { y: 100, opacity: 0, delay: 1.2 });
     TweenMax.to('.btn-get-started', 1, { opacity: 1, delay: 1.4 });
-    TweenMax.to('.btn-get-started', 0.6, { scale: 1.3, delay: 2, repeat: -1 })
+    TweenMax.to('.btn-get-started', 0.6, { scale: 1.3, delay: 2, repeat: -1 }) */
 
     $(window).scroll(() => {
 
@@ -239,7 +154,7 @@ export class HomeComponent implements OnInit {
       }, 700);
     } else {
       $('html, body').animate({
-        scrollTop: $(divName).offset().top - 100
+        scrollTop: $(divName).offset().top - 50
       }, 700);
     }
 

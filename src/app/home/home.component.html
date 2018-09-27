@@ -49,7 +49,7 @@
   </header><!-- #header -->
 
   <div class="panel">
-    <p class="closeNotification">X</p>
+    <p class="closeNotification"><i class="fas fa-times-circle"></i></p>
     <div class="title">Bildirimler</div>
     <ul class="notification-bar">
       <li class="unread">
@@ -160,7 +160,8 @@
       <h2 class="welcomingText noselect"> <img width="15vh" src="assets\img\1.png"> ETKİNLİKTEN <img width="15vh" src="assets\img\3.png">
         KAT FAZLASI</h2>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScfK6Jb-N7BWdw7mpM5sLI86heehoWvB75csLb6wceZkDnLWg/viewform?usp=send_form"
-        target="_blank" class="btn-get-started noselect">Aramıza Katıl!</a>
+        target="_blank" class="joinUs noselect">Aramıza Katıl!</a>
+ 
     </div>
 
 
@@ -232,7 +233,7 @@
 
         <div class="row text-center">
           <div class="col-lg-4">
-            <div class="card" style="width: 25rem;">
+            <div class="card" >
               <div class="card-img-top"></div>
               <div class="card-body">
                 <h4 class="card-title">BrainHack</h4>
@@ -295,7 +296,7 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card" style="width: 25rem;">
+            <div class="card" >
               <div class="card-img-top2"></div>
               <div class="card-body">
                 <h4 class="card-title">BuildUp</h4>
@@ -368,7 +369,7 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card" style="width: 25rem;">
+            <div class="card" >
               <div class="card-img-top3"></div>
               <div class="card-body">
                 <h4 class="card-title">IzHACK</h4>
@@ -463,14 +464,20 @@
 
     
      <section id="sponsors">
-      <h2 class="section-title text-center" style="padding-bottom:6vh;padding-top:6vh">2019 Sponsorları</h2>
+     
 
-      <div class="owl-carousel owl-theme sponsorNewOwl">
-  
-        <div class="item"><img (click)="openInNewTab('http://www.biletbayi.com/')" src="assets/img/sponsors/biletbayi.png" /></div>
-
-        <div class="item"><img (click)="openInNewTab('https://www.gengoo.net')" src="assets/img/sponsors/gengoo.png" /></div>
-       </div>
+    
+      <div class="carousel"
+      data-flickity='{ "autoPlay": 2000, 
+      "wrapAround": true,
+      "adaptiveHeight": true,
+      "pageDots": false }'>
+      <div (click)="openInNewTab('https://www.biletbayi.com/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/biletbayi.png"/></div>
+      <div (click)="openInNewTab('https://gengoo.net')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/gengoo.png"/></div>
+      
+     
+    </div>
+    
       
     </section>
 
@@ -945,24 +952,28 @@
     <!-- SPONSORS -->
 
     <section id="sponsors">
-      <h2 class="section-title text-center" style="padding-bottom:6vh;padding-top:6vh">2019 Sponsorları</h2>
+      <h2 class="section-title text-center" style="padding-bottom:6vh;padding-top:6vh">2018 Sponsorları</h2>
+ 
+      
+      <div class="carousel"
+      data-flickity='{ "autoPlay": 2000, 
+      "wrapAround": true,
 
-      <div class="owl-carousel owl-theme sponsorNewOwl">
-        <div class="item"><img (click)="openInNewTab('https://www.bilimsenligi.com')" src="assets/img/sponsors/bilimsenligi.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.etiya.com/')" src="assets/img/sponsors/etiya_teknoloji_ile_ulastiracak_h5934.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.linovi.com/')" src="assets/img/sponsors/linovi.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://canyoupwn.me/')" src="assets/img/sponsors/Logo-2-1.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.egebirlik.org.tr/')" src="assets/img/sponsors/logwerqo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://octosec.net/')" src="assets/img/sponsors/octosec.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://pluscloud.nl/en/')" src="assets/img/sponsors/plusclouds-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://shiftdelete.net/')" src="assets/img/sponsors/sdn-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://sitoplazma.com/')" src="assets/img/sponsors/sitoplazma.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.turktelekom.com.tr/Sayfalar/Ana-Sayfa.aspx')" src="assets/img/sponsors/ttnet-e-iki-uluslararasi-odul-birden.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.imza.com/')" src="assets/img/sponsors/twgg.png" /></div>
-        <div class="item"><img (click)="openInNewTab('https://www.webtekno.com/')" src="assets/img/sponsors/webtekno-logo.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.parta.com.tr/')" src="assets/img/sponsors/parta.png" /></div>
-        <div class="item"><img (click)="openInNewTab('http://www.biletbayi.com/')" src="assets/img/sponsors/biletbayi.png" /></div>
-      </div>
+      "pageDots": false }'>
+      <div (click)="openInNewTab('https://www.bilimsenligi.com')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/bilimsenligi.png"/></div>
+       <div (click)="openInNewTab('http://www.linovi.com/')" class="carousel-cell"> <img class="sponsorImg"  src="assets/img/sponsors/linovi.png"/></div>
+      <div (click)="openInNewTab('https://canyoupwn.me/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/logwerqo.png" /></div>
+      <div (click)="openInNewTab('http://www.egebirlik.org.tr/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/Logo-2-1.png" /></div>
+      <div  (click)="openInNewTab('https://octosec.net/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/octosec.png"/></div>
+      <div (click)="openInNewTab('https://pluscloud.nl/en/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/plusclouds-logo.png"/></div>
+      <div (click)="openInNewTab('https://shiftdelete.net/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/sdn-logo.png"/></div>
+      <div (click)="openInNewTab('http://sitoplazma.com/')" class="carousel-cell"> <img class="sponsorImg"  src="assets/img/sponsors/sitoplazma.png"/></div>
+       <div (click)="openInNewTab('https://www.imza.com/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/twgg.png"/></div>
+      <div (click)="openInNewTab('https://www.webtekno.com/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/webtekno-logo.png"/></div>
+      <div (click)="openInNewTab('http://www.parta.com.tr/')" class="carousel-cell"> <img class="sponsorImg" src="assets/img/sponsors/parta.png" /></div>
+       
+     
+    </div>
       
     </section>
 

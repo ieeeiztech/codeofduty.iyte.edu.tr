@@ -91,7 +91,7 @@
 
  .socialContainer {
      width: 10%;
-     top: 20vh;
+     top: 10vh;
      right: 0;
      position: fixed;
      z-index: 99999;
@@ -194,25 +194,83 @@
      font-size: 16px;
  }
 
- .card {
+ 
+ .card {     
      margin: 0 auto;
- }
-
- .card {
-     border-radius: 2px;
+      border-radius: 2px;
      overflow: hidden;
      box-shadow: 2px 5px 20px 0px rgba(81, 81, 81, 0.701);
  }
+/*  @media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        
+    }
 
- .card-img-top {
-     background: url('../../assets/img/logo_brainhack.png');
-     background-position: center;
-     background-size: 55%;
-     background-position-x: 50%;
-     background-repeat: no-repeat;
-     height: 200px;
-     width: 400px;
- }
+   
+}
+@media (max-width:900px) and (min-width:300px) {
+    .card {
+        width: 90vw;
+        height: 40vh;
+
+    }
+     
+
+   
+}
+@media (max-width:1099px) and (min-width:900px) {
+    .card {
+        width: 33vw;
+        
+    }
+    
+}
+
+@media (min-width:1100px)  {
+    .card {
+        width: 33vw;
+        height: 65vh;
+
+    }
+ 
+} */
+
+.card-img-top {
+    background: url('../../assets/img/logo_brainhack.png');
+    background-position: center;
+    background-size: 40%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 80%;
+    margin-left: auto;
+   margin-right: auto;
+}
+
+.card-img-top2 {
+   background: url('../../assets/img/logo_buildup.png') center / cover;
+   background-position: center;
+   background-size: 55%;
+   background-position-x: 50%;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 80%;
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img-top3 {
+   background: url('../../assets/img/logo_izhack.png') center / cover;
+   background-position: center;
+   background-size: 55%;
+   background-position-x: 50%;
+   background-repeat: no-repeat;
+   height: 200px;
+   width: 80%;
+   margin-left: auto;
+  margin-right: auto;
+}
 
  .card-img-top-modal1 {
      background: url('../../assets/img/logo_brainhack.png');
@@ -230,7 +288,7 @@
  .card-img-top-modal2 {
      background: url('../../assets/img/logo_buildup.png');
      background-position: center;
-     background-size: 55%;
+     background-size: 40%;
      background-position-x: 50%;
      background-repeat: no-repeat;
      height: 20vw;
@@ -243,7 +301,7 @@
  .card-img-top-modal3 {
      background: url('../../assets/img/logo_izhack.png');
      background-position: center;
-     background-size: 55%;
+     background-size: 40%;
      background-position-x: 50%;
      background-repeat: no-repeat;
      height: 20vw;
@@ -253,25 +311,7 @@
      margin-right: 25vw;
  }
 
- .card-img-top2 {
-     background: url('../../assets/img/logo_buildup.png') center / cover;
-     background-position: center;
-     background-size: 55%;
-     background-position-x: 50%;
-     background-repeat: no-repeat;
-     height: 200px;
-     width: 400px;
- }
-
- .card-img-top3 {
-     background: url('../../assets/img/logo_izhack.png') center / cover;
-     background-position: center;
-     background-size: 55%;
-     background-position-x: 50%;
-     background-repeat: no-repeat;
-     height: 200px;
-     width: 400px;
- }
+ 
 
  .categoriesHeader {
      font-size: 30px;
@@ -674,7 +714,7 @@
  .panel {
      width: 100%;
      height: 100%;
-     position: absolute;
+     position: fixed;
      padding: 30px 0 0 0;
      top: 0;
      background-color: #F7F7F7;
@@ -684,7 +724,8 @@
  }
 
  .panel.visible {
-     display: block;
+     display: block; position: fixed;
+      top: 0;
  }
 
  .panel .title {
@@ -813,3 +854,71 @@
          display: none;
      }
  }
+
+
+ .carousel {
+    background: #EEE;
+  }
+  
+  .carousel-cell {
+    width: 66%;
+    height: 30vh;
+    margin-right: 10px;
+   border-radius: 5px;
+   }
+  
+ .sponsorImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 0 2vh 0;
+    height: 26vh;
+ }
+
+ @media (max-width:500px)  {
+       
+ .sponsorImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vh 0 2vh 0;
+  width: 100%;
+  height: auto
+ }
+ 
+}
+
+ 
+
+ .joinUs {
+     color:rgb(52, 52, 52);
+     font-size: 1.3rem;
+ }
+
+
+
+ .joinUs {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.143);
+    border: 2px solid rgb(51, 189, 145);
+    color: rgb(208, 208, 208);
+    letter-spacing: 1px;
+    padding-top: 1vh;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+     cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .joinUs:hover {
+    color: white;
+    background: rgb(51, 189, 145);
+  }
+  .joinUs:active {
+    letter-spacing: 2px;
+  }
+  
