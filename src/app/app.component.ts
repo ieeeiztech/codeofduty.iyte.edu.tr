@@ -9,11 +9,9 @@ export class AppComponent {
   title = 'cod';
   ngOnInit() {
     setTimeout(function() {
-
       var x = document.querySelector('.spinner') as HTMLElement
-       x.style.display = "none";
-       console.log('QUENNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN')
-}, 4200);
+      x.style.display = "none";
+    }, 4200);
   }
 }
 

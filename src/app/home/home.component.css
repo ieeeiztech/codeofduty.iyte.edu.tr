@@ -216,6 +216,7 @@
 
  .card {
    margin: 0 auto;
+   height: 100%;
    border-radius: 2px;
    overflow: hidden;
    box-shadow: 2px 5px 20px 0px rgba(81, 81, 81, 0.701);
@@ -254,7 +255,7 @@
  .card-img-top {
    background: url('../../assets/img/logo_brainhack.png');
    background-position: center;
-   background-size: 40%;
+   background-size: 30%;
    background-position-x: 50%;
    background-repeat: no-repeat;
    height: 200px;
@@ -266,7 +267,7 @@
  .card-img-top2 {
    background: url('../../assets/img/logo_buildup.png') center / cover;
    background-position: center;
-   background-size: 55%;
+   background-size: 30%;
    background-position-x: 50%;
    background-repeat: no-repeat;
    height: 200px;
@@ -278,7 +279,7 @@
  .card-img-top3 {
    background: url('../../assets/img/logo_izhack.png') center / cover;
    background-position: center;
-   background-size: 55%;
+   background-size: 30%;
    background-position-x: 50%;
    background-repeat: no-repeat;
    height: 200px;
@@ -287,10 +288,22 @@
    margin-right: auto;
  }
 
+ .card-img-top4 {
+  background: url('../../assets/img/logo_mindin.png') center / cover;
+  background-position: center;
+  background-size: 30%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
  .card-img-top-modal1 {
    background: url('../../assets/img/logo_brainhack.png');
    background-position: center;
-   background-size: 55%;
+   background-size: 30% !important;
    background-position-x: 50%;
    background-repeat: no-repeat;
    height: 20vw;
@@ -326,6 +339,18 @@
    margin-right: 25vw;
  }
 
+ .card-img-top-modal4 {
+  background: url('../../assets/img/logo_mindin.png');
+  background-position: center;
+  background-size: 40%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  height: 20vw;
+  width: 40vw;
+  margin-left: 25vw;
+  float: left;
+  margin-right: 25vw;
+}
 
 
  .categoriesHeader {
@@ -442,8 +467,8 @@
 
  /*HACK BTN*/
 
- .hackBtn {
-   background: rgb(186, 159, 87);
+ .mindBtn {
+   background: #511f6f;
    color: #fff;
    border: none;
    position: relative;
@@ -458,32 +483,32 @@
    box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.701);
  }
 
- .hackBtn:hover {
+ .mindBtn:hover {
    background: #fff;
-   color: rgb(186, 159, 87);
+   color: #511f6f;
  }
 
- .hackBtn:before,
- .hackBtn:after {
+ .mindBtn:before,
+ .mindBtn:after {
    content: '';
    position: absolute;
    top: 0;
    right: 0;
    height: 2px;
    width: 0;
-   background: rgb(186, 159, 87);
+   background: #511f6f;
    transition: 400ms ease all;
  }
 
- .hackBtn:after {
+ .mindBtn:after {
    right: inherit;
    top: inherit;
    left: 0;
    bottom: 0;
  }
 
- .hackBtn:hover:before,
- .hackBtn:hover:after {
+ .mindBtn:hover:before,
+ .mindBtn:hover:after {
    width: 100%;
    transition: 800ms ease all;
  }
@@ -505,6 +530,54 @@
  #myImg:hover {
    opacity: 0.7;
  }
+
+ /* Mind BTN */
+ .hackBtn {
+  background: rgb(186, 159, 87);
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin-top: 4vh;
+  border-radius: 2px !important;
+  box-shadow: 2px 5px 10px 0px rgba(81, 81, 81, 0.701);
+}
+
+.hackBtn:hover {
+  background: #fff;
+  color: rgb(186, 159, 87);
+}
+
+.hackBtn:before,
+.hackBtn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(186, 159, 87);
+  transition: 400ms ease all;
+}
+
+.hackBtn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.hackBtn:hover:before,
+.hackBtn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+ 
 
  /* The Modal (background) */
 
